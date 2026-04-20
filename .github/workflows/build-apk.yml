@@ -8,7 +8,9 @@
 #   KEY_PASS         密钥密码
 #   KEY_ALIAS        密钥别名
 #
-# 触发方式：Actions → Build APK → Run workflow；或推送 tag v*（如 v1.0.0）
+# 触发方式：
+#   · Actions → Build APK → Run workflow：只构建并上传 Artifact，不创建 Release
+#   · 在 main 上打并推送 v* 标签（如 v1.0.1）：构建 + 自动创建 GitHub Release 并附上 APK
 name: Build APK
 
 on:
@@ -18,7 +20,7 @@ on:
       - "v*"
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
   build:
@@ -67,9 +69,20 @@ jobs:
           _JAVA_OPTIONS: -Xmx6g
         run: python build.py
 
-      - name: Upload AutoJsPro-signed.apk
+      - name: Upload AutoJsPro-signed.apk (Artifact)
         uses: actions/upload-artifact@v4
         with:
           name: AutoJsPro-signed
           path: AutoJsPro-signed.apk
           if-no-files-found: error
+
+      - name: Copy APK for Release 附件名
+        if: startsWith(github.ref, 'refs/tags/')
+        run: cp AutoJsPro-signed.apk "AutoJsPro-signed-${{ github.ref_name }}.apk"
+
+      - name: Create GitHub Release（仅推送 v* 标签时）
+        if: startsWith(github.ref, 'refs/tags/')
+        uses: softprops/action-gh-release@v2
+        with:
+          files: AutoJsPro-signed-${{ github.ref_name }}.apk
+          generate_release_notes: true
