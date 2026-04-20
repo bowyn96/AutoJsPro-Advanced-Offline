@@ -1,0 +1,2 @@
+#!/system/bin/sh
+exec node  "$NPM_PREFIX/node_modules/corepack/dist/yarnpkg.js" "$@"

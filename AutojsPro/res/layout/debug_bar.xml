@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ee81d4fa" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:padding="8.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_width="24.0dp" android:layout_height="24.0dp" android:layout_marginRight="8.0dp" android:src="@drawable/ic_debug" />
+        <TextView android:textSize="15.0sp" android:textColor="@android:color/white" android:id="@id/title" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/text_debug" android:layout_weight="1.0" />
+        <ImageView android:id="@id/execute" android:background="?selectableItemBackgroundBorderless" android:layout_width="28.0dp" android:layout_height="28.0dp" android:layout_marginRight="8.0dp" android:src="@drawable/ic_script" android:tint="@android:color/white" />
+        <ImageView android:id="@id/add" android:background="?selectableItemBackgroundBorderless" android:layout_width="28.0dp" android:layout_height="28.0dp" android:src="@drawable/ic_add_white_48dp" android:tint="@android:color/white" />
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/variables" android:layout_width="match_parent" android:layout_height="match_parent" />
+</LinearLayout>

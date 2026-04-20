@@ -1,0 +1,30 @@
+{
+  "assets": [],
+  "encryptLevel": 0,
+  "useFeatures": [],
+  "launchConfig": {
+    "displaySplash": true,
+    "hideLogs": false,
+    "splashText": "Powered by Auto.js Pro",
+    "stableMode": false,
+    "splashLayoutXml": "splash.xml"
+  },
+  "main": "main.js",
+  "name": "自定义启动图",
+  "optimization": {
+    "removeOpenCv": true,
+    "unusedResources": false,
+    "obfuscateComponents": false
+  },
+  "packageName": "org.example.custom_splash",
+  "scripts": {},
+  "versionCode": 1,
+  "versionName": "1.0.0",
+  "permissionConfig": {
+    "manifestPermissions": [
+      "android.permission.INTERNET",
+      "android.permission.ACCESS_NETWORK_STATE"
+    ],
+    "requestListOnStartup": []
+  }
+}

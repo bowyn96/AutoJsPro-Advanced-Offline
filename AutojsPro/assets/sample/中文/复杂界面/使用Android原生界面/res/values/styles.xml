@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="MainTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/mainColorPrimary</item>
+        <item name="colorPrimaryDark">@color/mainColorPrimaryDark</item>
+        <item name="colorAccent">@color/mainColorAccent</item>
+    </style>
+
+    <color name="mainColorAccent">#FF5252</color>
+    <color name="mainColorPrimaryDark">#0097A7</color>
+    <color name="mainColorPrimary">#00BCD4</color>
+</resources>

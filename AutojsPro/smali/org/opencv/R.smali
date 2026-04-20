@@ -1,0 +1,23 @@
+.class public final Lorg/opencv/R;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lorg/opencv/R$attr;,
+        Lorg/opencv/R$id;,
+        Lorg/opencv/R$styleable;
+    }
+.end annotation
+
+
+# direct methods
+.method private constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method

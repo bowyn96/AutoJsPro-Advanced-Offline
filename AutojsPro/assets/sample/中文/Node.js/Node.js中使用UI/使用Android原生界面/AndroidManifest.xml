@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 当前版本暂时只支持这里的包名为org.autojs.autojspro，不能改成其他包名 -->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.autojs.autojspro" >
+
+</manifest>

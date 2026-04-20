@@ -1,0 +1,60 @@
+{
+    "abis": null,
+    "assets": [],
+    "build": {
+        "build_number": 0,
+        "build_time": 0,
+        "release": false
+    },
+    "type": "node",
+    "encryptLevel": 0,
+    "useFeatures": [],
+    "launchConfig": {
+        "displaySplash": true,
+        "hideLogs": false,
+        "splashText": "",
+        "stableMode": false,
+        "splashIcon": null,
+        "splashLayoutXml": null
+    },
+    "main": "main.js",
+    "optimization": {
+        "removeOpenCv": false,
+        "unusedResources": false,
+        "removeAccessibilityService": false,
+        "obfuscateComponents": false
+    },
+    "packageName": "com.node",
+    "scripts": {},
+    "versionCode": 0,
+    "versionName": "1.0.0",
+    "icon": "",
+    "publish": {
+        "category": "",
+        "details": "",
+        "maxAutoJsVersion": 0,
+        "maxProVersion": 0,
+        "minAutoJsVersion": 0,
+        "minProVersion": 0,
+        "minSdkVersion": 0,
+        "permissions": [],
+        "summary": "",
+        "tags": null
+    },
+    "signingConfig": {
+        "keystore": "",
+        "alias": "",
+        "uuid": ""
+    },
+    "androidResources": null,
+    "permissionConfig": {
+        "manifestPermissions": null,
+        "requestListOnStartup": ["android.permission.WRITE_EXTERNAL_STORAGE"]
+    },
+    "features": {
+        "builtInOCR": null,
+        "activityIntentTasks": false,
+        "nodejs": "auto"
+    },
+    "plugins": {}
+}

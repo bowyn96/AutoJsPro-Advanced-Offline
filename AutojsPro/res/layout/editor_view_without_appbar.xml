@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:id="@id/editorContainer" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/inputMethodEnhanceBar" android:background="#77f2f3f7" android:visibility="gone" android:layout_width="match_parent" android:layout_height="70.0dp">
+            <org.autojs.autojs.ui.edit.completion.ActionBar android:id="@id/actionBar" android:layout_width="wrap_content" android:layout_height="match_parent" />
+            <org.autojs.autojs.ui.edit.completion.CodeCompletionBar android:id="@id/symbolBar" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0" />
+        </LinearLayout>
+        <org.autojs.autojs.ui.edit.keyboard.FunctionsKeyboardView android:id="@id/functionsKeyboard" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <org.autojs.autojs.ui.edit.debug.DebugBar android:id="@id/debugBar" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+</merge>

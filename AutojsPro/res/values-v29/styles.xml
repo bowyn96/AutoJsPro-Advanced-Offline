@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme.Splash" parent="@style/AppTheme">
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+        <item name="android:forceDarkAllowed">false</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="Theme.UiHelper" parent="@style/Theme.MaterialComponents.DayNight.DarkActionBar.Bridge">
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:forceDarkAllowed">true</item>
+    </style>
+</resources>

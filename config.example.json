@@ -1,0 +1,8 @@
+{
+  "android_sdk": "D:\\Android\\Sdk",
+  "jdk_path": "D:\\Java\\jdk-21",
+  "keystore": "autojspro.jks",
+  "keystore_pass": "请填写密钥库密码",
+  "key_pass": "请填写密钥密码",
+  "key_alias": "请填写密钥别名"
+}

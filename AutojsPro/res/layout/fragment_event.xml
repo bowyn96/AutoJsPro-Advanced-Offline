@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/constraintLayout" android:padding="4.0dp" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="16.0sp" android:textColor="?color_text_normal" android:layout_gravity="center_vertical" android:id="@id/event_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="6.0dp" android:text="" android:maxLines="1" android:layout_weight="1.0" />
+        <Button android:textSize="14.0sp" android:textColor="?color_text_im" android:layout_gravity="center_vertical" android:id="@id/event_cancel" android:background="@drawable/border_line" android:layout_width="70.0dp" android:layout_height="28.0dp" android:layout_margin="4.0dp" android:text="@string/add_cancel" android:maxLines="1" />
+    </LinearLayout>
+    <View android:background="#ff555555" android:layout_width="match_parent" android:layout_height="1.0dp" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/event_result_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="6.0dp" android:layout_weight="1.0">
+            <TextView android:textSize="16.0sp" android:textColor="?color_text_verbose" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/copy_hint" />
+            <EditText android:textSize="16.0sp" android:textColor="?color_text_normal" android:layout_gravity="center_vertical" android:id="@id/event_result" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="" />
+        </LinearLayout>
+        <Button android:textSize="14.0sp" android:textColor="?color_text_im" android:layout_gravity="center_vertical" android:id="@id/event_copy" android:background="@drawable/border_line" android:layout_width="70.0dp" android:layout_height="28.0dp" android:layout_margin="4.0dp" android:text="@string/copy" android:maxLines="1" />
+    </LinearLayout>
+    <View android:background="?color_split" android:layout_width="match_parent" android:layout_height="1.0dp" />
+    <ExpandableListView android:id="@id/event_all" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="6.0dp" android:groupIndicator="@drawable/expand_list_indicator" android:childDivider="?color_split" />
+</LinearLayout>

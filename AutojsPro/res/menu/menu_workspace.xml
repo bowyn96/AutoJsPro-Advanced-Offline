@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/ic_docs" android:id="@id/action_docs" android:title="@string/text_view_docs" app:showAsAction="always" />
+    <item android:icon="@drawable/ic_ali_log" android:id="@id/action_log" android:title="@string/text_log" app:showAsAction="always" />
+    <item android:icon="@drawable/baseline_exit_to_app_white_48" android:id="@id/action_exit_workspace_view" android:title="@string/text_exit_workspace_view" app:showAsAction="always" />
+</menu>

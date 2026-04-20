@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="12.0dp">
+        <LinearLayout android:orientation="horizontal" android:background="@drawable/floating_console_bg_top" android:layout_width="match_parent" android:layout_height="40.0dp">
+            <TextView android:textSize="16.0sp" android:textColor="@android:color/white" android:ellipsize="end" android:gravity="left|center" android:id="@id/title" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_marginLeft="16.0dp" android:text="@string/text_console" android:maxLines="1" android:layout_weight="1.0" />
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_alignParentRight="true">
+                <ImageView android:id="@id/minimize" android:background="?selectableItemBackgroundBorderless" android:paddingLeft="8.0dp" android:paddingTop="24.0dp" android:paddingRight="8.0dp" android:paddingBottom="8.0dp" android:layout_width="40.0dp" android:layout_height="40.0dp" android:src="@drawable/ic_remove_white_24dp" android:scaleType="center" />
+                <ImageView android:id="@id/move_or_resize" android:background="?selectableItemBackgroundBorderless" android:padding="8.0dp" android:layout_width="40.0dp" android:layout_height="40.0dp" android:src="@drawable/ic_settings_ethernet_white_24dp" android:scaleType="fitXY" android:tint="@android:color/white" />
+                <ImageView android:id="@id/close" android:background="?selectableItemBackgroundBorderless" android:padding="8.0dp" android:layout_width="40.0dp" android:layout_height="40.0dp" android:src="@drawable/ic_close_white_24dp" android:scaleType="fitXY" />
+            </LinearLayout>
+        </LinearLayout>
+        <com.stardust.autojs.core.console.ConsoleView android:id="@id/console" android:background="@drawable/floating_console_bg_bottom" android:layout_width="match_parent" android:layout_height="match_parent" android:minHeight="200.0dp" />
+    </LinearLayout>
+    <ImageView android:id="@id/resizer" android:background="@drawable/circle_cool_black" android:padding="6.0dp" android:visibility="gone" android:layout_width="25.0dp" android:layout_height="25.0dp" android:src="@drawable/ic_resizer" android:scaleType="fitXY" android:tint="@android:color/white" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+    <ImageView android:id="@id/move_cursor" android:background="@drawable/circle_cool_black" android:padding="5.0dp" android:visibility="gone" android:layout_width="25.0dp" android:layout_height="25.0dp" android:src="@drawable/ic_move_cursor" android:scaleType="fitXY" android:tint="@android:color/white" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+</RelativeLayout>

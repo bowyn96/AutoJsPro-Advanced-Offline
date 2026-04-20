@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<notices>
+    <notice>
+        <name>Rhino: JavaScript in Java</name>
+        <url>https://github.com/mozilla/rhino</url>
+        <copyright/>
+        <license>Mozilla Public License 2.0</license>
+    </notice>
+    <notice>
+        <name>Material Dialogs</name>
+        <url>https://github.com/afollestad/material-dialogs</url>
+        <copyright>Copyright (c) 2014-2016 Aidan Michael Follestad</copyright>
+        <license>MIT License</license>
+    </notice>
+    <notice>
+        <name>Gson</name>
+        <url>https://github.com/google/gson</url>
+        <copyright>Copyright 2008 Google Inc.</copyright>
+        <license>Apache Software License 2.0</license>
+    </notice>
+    <notice>
+        <name>Alipay Sdk</name>
+        <copyright/>
+        <url>https://github.com/alipay/alipay-sdk-java-all</url>
+        <license>Apache Software License 2.0</license>
+    </notice>
+    <notice>
+        <name>Wechat Sdk</name>
+        <copyright/>
+        <url>https://pay.weixin.qq.com/wiki/doc/api/wxpay/en/pages/sdk.shtml</url>
+        <license>Apache Software License 2.0</license>
+    </notice>
+    <notice>
+        <name>MultiLevelListView</name>
+        <copyright>2016 (C) Copyright Open-RnD Sp. z o.o.</copyright>
+        <url>https://github.com/open-rnd/android-multi-level-listview</url>
+        <license>Apache Software License 2.0</license>
+    </notice>
+    <notice>
+        <name>event-bus</name>
+        <copyright>2016 (C) Copyright Open-RnD Sp. z o.o.</copyright>
+        <url>https://github.com/greenrobot/EventBus</url>
+        <license>Apache Software License 2.0</license>
+    </notice>
+    <notice>
+        <name>Expandable RecyclerView</name>
+        <copyright>Copyright (c) 2015 Big Nerd Ranch</copyright>
+        <url>https://github.com/bignerdranch/expandable-recycler-view</url>
+        <license>MIT License</license>
+    </notice>
+    <notice>
+        <name>TerminalEmulator</name>
+        <copyright/>
+        <url>https://github.com/termux/termux-app/tree/master/terminal-emulator</url>
+        <license>Apache Software License 2.0</license>
+    </notice>
+    <notice>
+        <name>TerminalView</name>
+        <copyright/>
+        <url>https://github.com/termux/termux-app/tree/master/terminal-view</url>
+        <license>Apache Software License 2.0</license>
+    </notice>
+    <notice>
+        <name>RecyclerView-FlexibleDivider</name>
+        <copyright>Copyright 2016 yqritc</copyright>
+        <url>https://github.com/yqritc/RecyclerView-FlexibleDivider</url>
+        <license>Apache Software License 2.0</license>
+    </notice>
+    <notice>
+        <name>Dora.js/node</name>
+        <url>https://github.com/Dorajs/node</url>
+        <copyright/>
+        <license>Apache Software License 2.0</license>
+    </notice>
+    <notice>
+        <name>OkHttp</name>
+        <copyright/>
+        <url>https://github.com/square/okhttp</url>
+        <license>Apache Software License 2.0</license>
+    </notice>
+    <notice>
+        <name>Retrofit</name>
+        <copyright/>
+        <url>https://github.com/square/retrofit</url>
+        <license>Apache Software License 2.0</license>
+    </notice>
+    <notice>
+        <name>Settings Compat</name>
+        <copyright>Copyright 2016 czy1121</copyright>
+        <url>https://github.com/czy1121/settingscompat</url>
+        <license>Apache Software License 2.0</license>
+    </notice>
+    <notice>
+        <name>Zip4j</name>
+        <copyright/>
+        <url>http://www.lingala.net/zip4j/</url>
+        <license>Apache Software License 2.0</license>
+    </notice>
+    <notice>
+        <name>Butter Knife</name>
+        <copyright/>
+        <url>https://github.com/JakeWharton/butterknife</url>
+        <license>Apache Software License 2.0</license>
+    </notice>
+    <notice>
+        <name>Java WebSocket</name>
+        <copyright/>
+        <url>https://github.com/TooTallNate/Java-WebSocket</url>
+        <license>MIT License</license>
+    </notice>
+    <notice>
+        <name>DexLib2</name>
+        <copyright/>
+        <url>https://github.com/JesusFreke/smali/tree/master/dexlib2</url>
+        <license>The 3-Clause BSD License</license>
+    </notice>
+    <notice>
+        <name>RoundedImageView</name>
+        <copyright/>
+        <url>https://github.com/vinc3m1/RoundedImageView</url>
+        <license>Apache Software License 2.0</license>
+    </notice>
+    <notice>
+        <name>RootShell</name>
+        <copyright/>
+        <url>https://github.com/Stericson/RootShell</url>
+        <license>Apache Software License 2.0</license>
+    </notice>
+    <notice>
+        <name>RxJava</name>
+        <copyright/>
+        <url>https://github.com/ReactiveX/RxJava</url>
+        <license>Apache Software License 2.0</license>
+    </notice>
+    <notice>
+        <name>JodaTime</name>
+        <copyright/>
+        <url>https://github.com/JodaOrg/joda-time</url>
+        <license>Apache Software License 2.0</license>
+    </notice>
+    <notice>
+        <name>Glide</name>
+        <copyright/>
+        <url>https://github.com/bumptech/glide</url>
+        <license>Apache Software License 2.0</license>
+    </notice>
+    <notice>
+        <name>Shizuku</name>
+        <copyright/>
+        <url>https://github.com/RikkaApps/Shizuku</url>
+        <license>Apache Software License 2.0</license>
+    </notice>
+    <notice>
+        <name>Paddle Lite</name>
+        <copyright/>
+        <url>https://github.com/PaddlePaddle/Paddle-Lite</url>
+        <license>Apache Software License 2.0</license>
+    </notice>
+</notices>

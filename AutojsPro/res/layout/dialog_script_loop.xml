@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="16.0dp" android:paddingTop="12.0dp" android:paddingRight="16.0dp" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.google.android.material.textfield.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/text_loop_times">
+        <androidx.appcompat.widget.AppCompatEditText android:id="@id/loopTimes" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="0" android:inputType="number" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <TextView android:textSize="12.0sp" android:textColor="?android:textColorSecondary" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="4.0dp" android:layout_marginBottom="8.0dp" android:text="@string/hint_loop_times" />
+    <com.google.android.material.textfield.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/text_loop_interval">
+        <androidx.appcompat.widget.AppCompatEditText android:id="@id/loopInterval" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="1.0" android:inputType="numberDecimal" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/text_loop_delay">
+        <androidx.appcompat.widget.AppCompatEditText android:id="@id/loopDelay" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="0.0" android:inputType="numberDecimal" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <TextView android:textSize="12.0sp" android:textColor="?android:textColorSecondary" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="4.0dp" android:layout_marginBottom="8.0dp" android:text="@string/hint_loop_delay" />
+</LinearLayout>

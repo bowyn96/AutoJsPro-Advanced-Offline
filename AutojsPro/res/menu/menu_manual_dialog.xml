@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/ic_round_arrow_back_24" android:id="@id/back" android:title="" app:showAsAction="always" />
+    <item android:icon="@drawable/round_open_in_new_24" android:id="@id/fullscreen" android:title="" app:showAsAction="always" />
+</menu>

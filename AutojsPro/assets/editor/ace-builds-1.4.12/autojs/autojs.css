@@ -1,0 +1,62 @@
+#editor {
+    user-select: none;
+}
+
+.debug-marker {
+    position: absolute;
+    background: rgba(100, 200, 100, 0.5);
+    z-index: 20
+}
+
+.ace_gutter-cell.ace_breakpoint {
+    padding-left: 0px;
+}
+
+.ace_gutter-cell.ace_breakpoint::before {
+    content: '';
+    float: left;
+    width: 0.7em;
+    height: 0.7em;
+    border-radius: 0.35em;
+    background-color: #DB5860;
+    background-clip: content-box;
+    left: 10%;
+    top: 17%;
+    position: relative;
+}
+
+.ace_mobile-menu { display: none !important }
+
+#magnifier {
+    position: absolute;
+    height: 50px;
+    width: 100px;
+    overflow: hidden;
+    background: inherit;
+    border-radius: 2px;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);;
+    transform: scale(1.5) translateX(-50%);
+    transform-origin: center;
+}
+
+#magnifier-progress {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    background-color: white;
+}
+
+#magnifier-content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+}
+
+@font-face {
+    font-family: 'CONSOLA';
+    src: url('../CONSOLA.TTF') format('truetype');
+  }

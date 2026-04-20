@@ -1,0 +1,52 @@
+<html>
+
+<body>
+  <div id="app"></div>
+  <link rel="stylesheet" href="https://unpkg.com/vant@2.12/lib/index.css" />
+
+  <script src="https://unpkg.com/vue@2.6/dist/vue.min.js"></script>
+  <script src="./vue2-sfc-loader@0.8.4.js" charset="UTF-8"></script>
+  <script src="https://unpkg.com/vant@2.12/lib/vant.min.js"></script>
+  <script src="autojs://sdk/v1.js"></script>
+  <script>
+    const { loadModule, vueVersion } = window['vue2-sfc-loader'];
+    const options = {
+      moduleCache: {
+        vue: Vue,
+        myData: {
+          vueVersion,
+        }
+      },
+      async getFile(url) {
+        let getContentData;
+        if (typeof ($autojs) !== 'undefined') {
+          const res = await $autojs.invoke('fetch', { path: url });
+          getContentData = (asBinary) => asBinary ? str2ab(res) : res;
+        } else {
+          const res = await fetch(url);
+          if (!res.ok) {
+            throw Object.assign(new Error(res.statusText + ' ' + url), { res });
+          }
+          getContentData = (asBinary) => asBinary ? res.arrayBuffer() : res.text();
+        }
+        return {
+          getContentData,
+        };
+        function str2ab(str) {
+          var buf = new ArrayBuffer(str.length * 2); // 2 bytes for each char
+          var bufView = new Uint16Array(buf);
+          for (var i = 0, strLen = str.length; i < strLen; i++) {
+            bufView[i] = str.charCodeAt(i);
+          }
+          return buf;
+        }
+      },
+      addStyle() { /* unused here */ },
+    }
+
+    loadModule('/main.vue', options)
+      .then(component => new Vue(component).$mount('#app'));
+  </script>
+</body>
+
+</html>

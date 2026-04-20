@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Widgets>
+    <WidgetGroup name="Layout">
+        <WidgetItem
+            name="frame"
+            example="<frame></frame>"
+            summary="Frame layout internal controls will be arranged in any overlapping arrangement"
+            type="DOUBLE" />
+        <WidgetItem
+            name="vertical"
+            example="<vertical></vertical>"
+            summary="Vertical layout Internal controls will be arranged vertically"
+            type="DOUBLE" />
+        <WidgetItem
+            name="horizontal"
+            example="<horizontal></horizontal>"
+            summary="Horizontal layout The internal controls will be arranged horizontally"
+            type="DOUBLE" />
+        <WidgetItem
+            name="list"
+            example="<list></list>"
+            summary="List layout is used to present list data equivalent to Android RecyclerView"
+            type="DOUBLE" />
+        <WidgetItem
+            name="drawer"
+            example="<drawer></drawer>"
+            summary="Slippage layout can pull out the page from the side"
+            type="DOUBLE" />
+        <WidgetItem
+            name="linear"
+            example="<linear></linear>"
+            summary="Linear layout The internal controls will be arranged horizontally or vertically linearly"
+            type="DOUBLE" />
+        <WidgetItem
+            name="relative"
+            example="<relative></relative>"
+            summary="Relative layout internal controls can be set relative to other controls"
+            type="DOUBLE" />
+        <WidgetItem
+            name="drawer"
+            example="<drawer></drawer>"
+            summary="Drawer layout can pull out the page from the side"
+            type="DOUBLE" />
+        <WidgetItem
+            name="viewpager"
+            example="<viewpager></viewpager>"
+            summary="Multi-page layout can have multiple pages that can be left and right activities"
+            type="DOUBLE" />
+        <WidgetItem
+            name="grid"
+            example="<grid></grid>"
+            summary="Table layout Table layout layout"
+            type="DOUBLE" />
+    </WidgetGroup>
+    <WidgetGroup name="Control">
+        <WidgetItem
+            name="text"
+            example="<text/>"
+            summary="Text control"
+            type="SINGLE" />
+        <WidgetItem
+            name="button"
+            example="<button/>"
+            summary="Button control"
+            type="SINGLE" />
+        <WidgetItem
+            name="input"
+            example="<input/>"
+            summary="[support binding] input box control"
+            type="SINGLE" />
+        <WidgetItem
+            name="checkbox"
+            example="<checkbox/>"
+            summary="[support binding] check box control"
+            type="SINGLE" />
+        <WidgetItem
+            name="Switch"
+            example="<Switch/>"
+            summary="[support binding] switch control"
+            type="SINGLE" />
+        <WidgetItem
+            name="spinner"
+            example="<spinner/>"
+            summary="[Support binding] drop-down menu control"
+            type="SINGLE" />
+        <WidgetItem
+            name="img"
+            example="<img/>"
+            summary="Picture control"
+            type="SINGLE" />
+        <WidgetItem
+            name="radiogroup"
+            example="<radiogroup/>"
+            summary="Radio group control"
+            type="SINGLE" />
+        <WidgetItem
+            name="radio"
+            example="<radio/>"
+            summary="[Support Binding] Single Select Box Control"
+            type="SINGLE" />
+        <WidgetItem
+            name="seekbar"
+            example="<seekbar/>"
+            summary="[Support binding] Drag bar control"
+            type="SINGLE" />
+        <WidgetItem
+            name="progressbar"
+            example="<progressbar/>"
+            summary="Progress bar control"
+            type="SINGLE" />
+        <WidgetItem
+            name="fab"
+            example="<fab/>"
+            summary="Floating button control"
+            type="SINGLE" />
+        <WidgetItem
+            name="card"
+            example="<card/>"
+            summary="Card control"
+            type="SINGLE" />
+        <WidgetItem
+            name="timepicker"
+            example="<timepicker/>"
+            summary="Time selection control"
+            type="SINGLE" />
+        <WidgetItem
+            name="datepicker"
+            example="<datepicker/>"
+            summary="Date selection control"
+            type="SINGLE" />
+        <WidgetItem
+            name="webview"
+            example="<webview/>"
+            summary="Web control"
+            type="SINGLE" />
+        <WidgetItem
+            name="appbar"
+            example="<appbar/>"
+            summary="App title bar control"
+            type="SINGLE" />
+        <WidgetItem
+            name="icon"
+            example="<icon/>"
+            summary="icon control"
+            type="SINGLE" />
+    </WidgetGroup>
+    <WidgetGroup name="Android layout">
+        <WidgetItem
+            name="FrameLayout"
+            example="<FrameLayout></FrameLayout>"
+            summary="frame layout"
+            type="DOUBLE" />
+        <WidgetItem
+            name="LinearLayout"
+            example="<LinearLayout></LinearLayout>"
+            summary="Linear layout"
+            type="DOUBLE" />
+        <WidgetItem
+            name="ScrollView"
+            example="<ScrollView></ScrollView>"
+            summary="Scroll layout"
+            type="DOUBLE" />
+        <WidgetItem
+            name="RecyclerView"
+            example="<RecyclerView></RecyclerView>"
+            summary="Duplicate layout"
+            type="DOUBLE" />
+        <WidgetItem
+            name="ConstraintLayout"
+            example="<ConstraintLayout></ConstraintLayout>"
+            summary="Constraint layout"
+            type="DOUBLE" />
+        <WidgetItem
+            name="TableLayout"
+            example="<TableLayout></TableLayout>"
+            summary="table layout"
+            type="DOUBLE" />
+        <WidgetItem
+            name="TableRow"
+            example="<TableRow></TableRow>"
+            summary="Table row layout"
+            type="DOUBLE" />
+        <WidgetItem
+            name="CardView"
+            example="<CardView></CardView>"
+            summary="Card layout"
+            type="DOUBLE" />
+        <WidgetItem
+            name="GridLayout"
+            example="<GridLayout></GridLayout>"
+            summary="table layout"
+            type="DOUBLE" />
+        <WidgetItem
+            name="AppBarLayout"
+            example="<AppBarLayout></AppBarLayout>"
+            summary="App top bar layout"
+            type="DOUBLE" />
+        <WidgetItem
+            name="BottomAppBar"
+            example="<BottomAppBar></BottomAppBar>"
+            summary="Bottom column layout"
+            type="DOUBLE" />
+        <WidgetItem
+            name="NavigationView"
+            example="<NavigationView></NavigationView>"
+            summary="Navigation layout"
+            type="DOUBLE" />
+        <WidgetItem
+            name="ToolBar"
+            example="<ToolBar></ToolBar>"
+            summary="Toolbar layout"
+            type="DOUBLE" />
+        <WidgetItem
+            name="TabLayout"
+            example="<TabLayout></TabLayout>"
+            summary="Switch indicator group"
+            type="DOUBLE" />
+        <WidgetItem
+            name="TabItem"
+            example="<TabItem></TabItem>"
+            summary="Toggle indicator"
+            type="DOUBLE" />
+    </WidgetGroup>
+    <WidgetGroup name="Android Control">
+        <WidgetItem
+            name="View"
+            example="<View/>"
+            summary="Basic controls"
+            type="SINGLE" />
+        <WidgetItem
+            name="TextView"
+            example="<TextView/>"
+            summary="Text box control"
+            type="SINGLE" />
+        <WidgetItem
+            name="Button"
+            example="<Button/>"
+            summary="Button control"
+            type="SINGLE" />
+        <WidgetItem
+            name="ImageView"
+            example="<ImageView/>"
+            summary="Picture control"
+            type="SINGLE" />
+        <WidgetItem
+            name="WebView"
+            example="<WebView/>"
+            summary="Web control"
+            type="SINGLE" />
+        <WidgetItem
+            name="CheckBox"
+            example="<CheckBox/>"
+            summary="check box control"
+            type="SINGLE" />
+        <WidgetItem
+            name="RadioGroup"
+            example="<RadioGroup/>"
+            summary="Radio box component"
+            type="SINGLE" />
+        <WidgetItem
+            name="RadioButton"
+            example="<RadioButton/>"
+            summary="Radio Button"
+            type="SINGLE" />
+        <WidgetItem
+            name="ChipGroup"
+            example="<ChipGroup/>"
+            summary="label flow component"
+            type="SINGLE" />
+        <WidgetItem
+            name="Chip"
+            example="<Chip/>"
+            summary="label"
+            type="SINGLE" />
+        <WidgetItem
+            name="ToggleButton"
+            example="<ToggleButton/>"
+            summary="Switch control"
+            type="SINGLE" />
+        <WidgetItem
+            name="VideoView"
+            example="<VideoView/>"
+            summary="Video controls"
+            type="SINGLE" />
+        <WidgetItem
+            name="CalendarView"
+            example="<CalendarView/>"
+            summary="Date control"
+            type="SINGLE" />
+        <WidgetItem
+            name="ProgressBar"
+            example="<ProgressBar/>"
+            summary="Progress bar control"
+            type="SINGLE" />
+        <WidgetItem
+            name="SeekBar"
+            example="<SeekBar/>"
+            summary="Drag bar control"
+            type="SINGLE" />
+        <WidgetItem
+            name="RatingBar"
+            example="<RatingBar/>"
+            summary="Star control"
+            type="SINGLE" />
+        <WidgetItem
+            name="SearchView"
+            example="<SearchView/>"
+            summary="Search box control"
+            type="SINGLE" />
+        <WidgetItem
+            name="SurfaceView"
+            example="<SurfaceView/>"
+            summary="Streaming Media Controls"
+            type="SINGLE" />
+        <WidgetItem
+            name="AdView"
+            example="<AdView/>"
+            summary="Ad Controls"
+            type="SINGLE" />
+        <WidgetItem
+            name="MapView"
+            example="<MapView/>"
+            summary="Map control"
+            type="SINGLE" />
+        <WidgetItem
+            name="MockView"
+            example="<MockView/>"
+            summary="virtual control"
+            type="SINGLE" />
+        <WidgetItem
+            name="GuideLine"
+            example="<GuideLine/>"
+            summary="Locating line"
+            type="SINGLE" />
+        <WidgetItem
+            name="Barrier"
+            example="<Barrier/>"
+            summary="Locating block"
+            type="SINGLE" />
+    </WidgetGroup>
+</Widgets>

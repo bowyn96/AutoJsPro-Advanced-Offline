@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.google.android.material.appbar.MaterialToolbar android:id="@id/toolbar" android:layout_width="match_parent" android:layout_height="?actionBarSize" app:menu="@menu/menu_tasker_edit" app:navigationIcon="@drawable/ic_round_arrow_back_24" app:navigationIconTint="@color/colorOnSurface" app:title="@string/text_please_choose_a_script" />
+    </com.google.android.material.appbar.AppBarLayout>
+    <org.autojs.autojs.ui.explorer.ExplorerView android:id="@id/scriptList" android:background="@color/colorSurface" android:layout_width="match_parent" android:layout_height="match_parent" />
+</LinearLayout>

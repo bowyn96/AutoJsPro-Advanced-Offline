@@ -1,0 +1,13 @@
+// $ANTLR 2.7.7 (20060906): interface.g -> InterfaceParserTokenTypes.txt$
+InterfaceParser    // output token vocab name
+LITERAL_interface="interface"=4
+ID=5
+SEMI=6
+LITERAL_optional="optional"=7
+LPAREN=8
+RPAREN=9
+COMMA=10
+COLON=11
+SL_COMMENT=12
+ML_COMMENT=13
+WS=14

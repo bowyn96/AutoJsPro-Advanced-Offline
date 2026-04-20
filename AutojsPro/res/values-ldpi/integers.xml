@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="com_twofortyfouram_locale_sdk_client_maximum_blurb_length">45</integer>
+</resources>

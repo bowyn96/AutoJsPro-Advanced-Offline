@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@id/action_close" android:title="@string/text_close" />
+    <item android:id="@id/action_close_others" android:title="@string/text_close_other_tabs" />
+    <item android:id="@id/action_close_right" android:title="@string/text_close_tabs_right" />
+    <item android:id="@id/action_close_all" android:title="@string/text_close_all_tabs" />
+    <item android:id="@id/action_locate_file_in_file_tree_view" android:title="@string/text_locate_file_in_file_tree_view" />
+    <item android:title="@string/text_copy">
+        <menu>
+            <item android:id="@id/action_copy_path" android:title="@string/text_copy_path" />
+            <item android:id="@id/action_copy_dir_path" android:title="@string/text_copy_dir_path" />
+        </menu>
+    </item>
+</menu>

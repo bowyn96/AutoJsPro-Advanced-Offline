@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_dashboard"
+        android:icon="@drawable/ic_dashboard_black_48dp"
+        android:title="功能" />
+
+    <item
+        android:id="@+id/navigation_log"
+        android:icon="@drawable/ic_ac_unit_black_48dp"
+        android:title="日志" />
+
+    <item
+        android:id="@+id/navigation_settings"
+        android:icon="@drawable/ic_settings_black_48dp"
+        android:title="设置" />
+
+</menu>

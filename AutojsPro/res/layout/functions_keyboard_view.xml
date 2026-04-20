@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@color/divider" android:layout_width="match_parent" android:layout_height="1.0dp" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/properties" android:background="@color/window_background" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0" />
+    <View android:background="@color/divider" android:layout_width="match_parent" android:layout_height="1.0dp" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/module_list" android:layout_width="match_parent" android:layout_height="50.0dp" />
+</LinearLayout>

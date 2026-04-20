@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="internal_log_processes">
+        <item>app进程</item>
+        <item>script进程</item>
+        <item>发送全部日志</item>
+    </string-array>
+</resources>

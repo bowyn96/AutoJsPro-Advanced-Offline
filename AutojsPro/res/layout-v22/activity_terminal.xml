@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@android:color/black" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.termux.view.TerminalView android:id="@id/terminalView" android:focusableInTouchMode="true" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0" android:layout_marginStart="3.0dp" android:layout_marginEnd="3.0dp" android:autofillHints="password" android:importantForAutofill="no" />
+    <org.autojs.autojs.ui.terminal.TerminalToolbarView android:id="@id/toolbar" android:layout_width="match_parent" android:layout_height="wrap_content" />
+</LinearLayout>

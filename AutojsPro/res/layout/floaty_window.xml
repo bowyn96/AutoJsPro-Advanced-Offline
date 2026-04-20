@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/container" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="@dimen/floaty_window_offset" />
+    <ImageView android:layout_gravity="right|bottom" android:id="@id/resizer" android:background="@drawable/circle_cool_black" android:padding="6.0dp" android:visibility="gone" android:layout_width="25.0dp" android:layout_height="25.0dp" android:src="@drawable/ic_resizer" android:scaleType="fitXY" android:tint="@android:color/white" />
+    <ImageView android:layout_gravity="right|top" android:id="@id/close" android:background="@drawable/circle_cool_black" android:padding="5.0dp" android:visibility="gone" android:layout_width="25.0dp" android:layout_height="25.0dp" android:src="@drawable/ic_close_white_24dp" android:scaleType="fitXY" android:tint="@android:color/white" />
+    <ImageView android:layout_gravity="left|top" android:id="@id/move_cursor" android:background="@drawable/circle_cool_black" android:padding="5.0dp" android:visibility="gone" android:layout_width="25.0dp" android:layout_height="25.0dp" android:src="@drawable/ic_move_cursor" android:scaleType="fitXY" android:tint="@android:color/white" />
+</FrameLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:title="@string/text_sort">
+        <menu>
+            <item android:id="@id/action_sort_by_name" android:title="@string/text_name" />
+            <item android:id="@id/action_sort_by_date" android:title="@string/text_time" />
+            <item android:id="@id/action_sort_by_size" android:title="@string/text_size" />
+            <item android:id="@id/action_sort_by_type" android:title="@string/text_type" />
+            <item android:id="@id/action_sort_by_descending" android:title="@string/text_descending" android:checkable="true" />
+        </menu>
+    </item>
+    <item android:id="@id/rename" android:title="@string/text_rename" />
+    <item android:id="@id/send" android:title="@string/text_send" />
+    <item android:id="@id/delete" android:title="@string/text_delete" />
+    <item android:title="@string/text_create">
+        <menu>
+            <item android:id="@id/action_create_file" android:title="@string/text_file" />
+            <item android:id="@id/action_create_dir" android:title="@string/text_directory" />
+        </menu>
+    </item>
+    <item android:id="@id/action_project" android:title="@string/text_project" app:itemTextColor="@color/menu_color" app:showAsAction="never">
+        <menu>
+            <item android:id="@id/action_run_project" android:title="@string/text_run_project" app:showAsAction="never" />
+            <item android:id="@id/action_build_project_apk" android:title="@string/text_build_project_apk" app:showAsAction="never" />
+            <item android:id="@id/action_edit_project" android:title="@string/text_edit_project" app:showAsAction="never" />
+        </menu>
+    </item>
+</menu>

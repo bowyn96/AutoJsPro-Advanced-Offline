@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="48.0dp" android:minWidth="2000.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/dataItemArrow" android:padding="3.0dp" android:layout_width="30.0dp" android:layout_height="30.0dp" android:src="@drawable/ic_chevron_right_black_48dp" />
+    <TextView android:textSize="16.0sp" android:textColor="@android:color/black" android:ellipsize="end" android:id="@id/dataItemName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+</LinearLayout>

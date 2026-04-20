@@ -1,0 +1,26 @@
+{
+  "assets": [],
+  "encryptLevel": 0,
+  "useFeatures": [],
+  "launchConfig": {
+    "displaySplash": false,
+    "hideLogs": true,
+    "splashText": "",
+    "stableMode": false
+  },
+  "main": "main.js",
+  "name": "Counter",
+  "optimization": {
+    "obfuscateComponents": true,
+    "removeAccessibilityService": true,
+    "removeOpenCv": true,
+    "unusedResources": false
+  },
+  "packageName": "com.example.counter",
+  "permissionConfig": {
+    "requestListOnStartup": []
+  },
+  "scripts": {},
+  "versionCode": 1,
+  "versionName": "1.0.0"
+}

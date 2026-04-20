@@ -1,0 +1,22 @@
+{
+  "assets": [],
+  "encryptLevel": 0,
+  "useFeatures": [],
+  "launchConfig": {
+    "displaySplash": true,
+    "hideLogs": false,
+    "splashText": "Powered by Auto.js Pro",
+    "stableMode": false,
+    "splashLayoutXml": "splash.xml"
+  },
+  "main": "main.js",
+  "name": "Custom Startup Page",
+  "optimization": {
+    "removeOpenCv": true,
+    "unusedResources": false
+  },
+  "packageName": "org.example.custom_splash",
+  "scripts": {},
+  "versionCode": 1,
+  "versionName": "1.0.0"
+}

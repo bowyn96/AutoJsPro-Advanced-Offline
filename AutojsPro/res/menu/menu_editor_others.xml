@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@id/action_project" android:title="@string/text_project" app:itemTextColor="@color/menu_color" app:showAsAction="never">
+        <menu>
+            <item android:id="@id/action_run_project" android:title="@string/text_run_project" app:showAsAction="never" />
+            <item android:id="@id/action_build_project_apk" android:title="@string/text_build_project_apk" app:showAsAction="never" />
+            <item android:id="@id/action_edit_project" android:title="@string/text_edit_project" app:showAsAction="never" />
+        </menu>
+    </item>
+    <item android:icon="@drawable/ic_outline_android_24" android:id="@id/action_build_apk" android:title="@string/text_build_single_file" app:showAsAction="never" />
+    <item android:icon="@drawable/ic_round_manage_search_24" android:id="@id/action_import_java_class" android:title="@string/text_search_java_class" app:showAsAction="never" />
+    <item android:icon="@drawable/ic_outline_info_24" android:id="@id/action_info" android:title="@string/text_info" app:showAsAction="never" />
+    <item android:icon="@drawable/ic_round_text_increase_24" android:id="@id/action_editor_text_size" android:title="@string/text_text_size" app:showAsAction="never" />
+    <item android:icon="@drawable/ic_outline_color_lens_24" android:id="@id/action_editor_theme" android:title="@string/text_editor_theme" app:showAsAction="never" />
+    <item android:icon="@drawable/round_open_in_new_24" android:id="@id/action_open_by_other_apps" android:title="@string/text_open_by_other_apps" app:showAsAction="never" />
+    <item android:icon="@drawable/ic_outline_remove_red_eye_24" android:id="@id/action_design" android:title="@string/text_visual_editor" app:showAsAction="never" />
+</menu>

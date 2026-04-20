@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<org.autojs.autojs.ui.edit.editor.CodeEditText android:textSize="15.0sp" android:textColor="@android:color/transparent" android:id="@id/codeEditText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scrollHorizontally="true" android:imeOptions="flagNoExtractUi" android:textCursorDrawable="@drawable/code_edit_text_cursor"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

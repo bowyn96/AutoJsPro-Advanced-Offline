@@ -1,0 +1,92 @@
+.class public final Lorg/autojs/autojspro/v8/api/ui/V8ScriptExecuteActivity$ޢ;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lorg/autojs/autojspro/v8/api/ui/V8ScriptExecuteActivity$Function;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lorg/autojs/autojspro/v8/api/ui/V8ScriptExecuteActivity;->onKeyLongPress(ILandroid/view/KeyEvent;)Z
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = null
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Lorg/autojs/autojspro/v8/api/ui/V8ScriptExecuteActivity$Function<",
+        "Ljava/lang/Boolean;",
+        ">;"
+    }
+.end annotation
+
+
+# instance fields
+.field public final synthetic Ϳ:Lorg/autojs/autojspro/v8/api/ui/V8ScriptExecuteActivity;
+
+
+# direct methods
+.method public constructor <init>(Lorg/autojs/autojspro/v8/api/ui/V8ScriptExecuteActivity;)V
+    .locals 0
+
+    iput-object p1, p0, Lorg/autojs/autojspro/v8/api/ui/V8ScriptExecuteActivity$ޢ;->Ϳ:Lorg/autojs/autojspro/v8/api/ui/V8ScriptExecuteActivity;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final varargs call([Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 2
+    .param p1    # [Ljava/lang/Object;
+        .annotation build Lokhttp3/internal/io/zu2;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "([",
+            "Ljava/lang/Object;",
+            ")",
+            "Ljava/lang/Boolean;"
+        }
+    .end annotation
+
+    const-string v0, "args"
+
+    invoke-static {p1, v0}, Lokhttp3/internal/io/fa1;->ԯ(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const/4 v0, 0x0
+
+    aget-object v0, p1, v0
+
+    const/4 v1, 0x1
+
+    aget-object p1, p1, v1
+
+    check-cast p1, Landroid/view/KeyEvent;
+
+    check-cast v0, Ljava/lang/Number;
+
+    invoke-virtual {v0}, Ljava/lang/Number;->intValue()I
+
+    move-result v0
+
+    iget-object v1, p0, Lorg/autojs/autojspro/v8/api/ui/V8ScriptExecuteActivity$ޢ;->Ϳ:Lorg/autojs/autojspro/v8/api/ui/V8ScriptExecuteActivity;
+
+    invoke-static {v1, v0, p1}, Lorg/autojs/autojspro/v8/api/ui/V8ScriptExecuteActivity;->access$onKeyLongPress$s-847601390(Lorg/autojs/autojspro/v8/api/ui/V8ScriptExecuteActivity;ILandroid/view/KeyEvent;)Z
+
+    move-result p1
+
+    invoke-static {p1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    move-result-object p1
+
+    return-object p1
+.end method

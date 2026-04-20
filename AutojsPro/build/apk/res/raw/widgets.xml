@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Widgets>
+    <WidgetGroup name="布局">
+        <Widget name="drawer" example="&lt;drawer&gt;&lt;/drawer&gt;" summary="抽屉布局 可从侧边拉出页面"
+            type="VG" />
+        <Widget name="frame" example="&lt;frame&gt;&lt;/frame&gt;" summary="帧布局 内部控件将任意重叠排列"
+            type="VG" />
+        <Widget name="grid" example="&lt;grid&gt;&lt;/grid&gt;" summary="表格布局 表格状排布布局"
+            type="VG" />
+        <Widget name="horizontal" example="&lt;horizontal&gt;&lt;/horizontal&gt;"
+            summary="水平布局 内部控件将水平排列" type="VG" />
+        <Widget name="linear" example="&lt;linear&gt;&lt;/linear&gt;" summary="线性布局 内部控件将水平或垂直线性排列"
+            type="VG" />
+        <Widget name="list" example="&lt;list&gt;&lt;/list&gt;"
+            summary="列表布局 用于呈现列表类数据 等价安卓RecyclerView" type="VG" />
+        <Widget name="relative" example="&lt;relative&gt;&lt;/relative&gt;"
+            summary="相对布局 内部控件可相对其他控件设置位置" type="VG" />
+        <Widget name="vertical" example="&lt;vertical&gt;&lt;/vertical&gt;" summary="垂直布局 内部控件将垂直排列"
+            type="VG" />
+        <Widget name="viewpager" example="&lt;viewpager&gt;&lt;/viewpager&gt;"
+            summary="多页布局 可有多个可左右活动的页面" type="VG" />
+    </WidgetGroup>
+    <WidgetGroup name="控件">
+        <Widget name="appbar" example="&lt;appbar/&gt;" summary="App标题栏控件" type="V" />
+        <Widget name="button" example="&lt;button/&gt;" summary="按钮控件" type="V" />
+        <Widget name="card" example="&lt;card/&gt;" summary="卡片控件" type="V" />
+        <Widget name="checkbox" example="&lt;checkbox/&gt;" summary="[支持绑定] 复选框控件" type="V" />
+        <Widget name="datepicker" example="&lt;datepicker/&gt;" summary="日期选择控件" type="V" />
+        <Widget name="fab" example="&lt;fab/&gt;" summary="浮动按钮控件" type="V" />
+        <Widget name="icon" example="&lt;icon/&gt;" summary="图标控件" type="V" />
+        <Widget name="img" example="&lt;img/&gt;" summary="图片控件" type="V" />
+        <Widget name="input" example="&lt;input/&gt;" summary="[支持绑定] 输入框控件" type="V" />
+        <Widget name="progressbar" example="&lt;progressbar/&gt;" summary="进度条控件" type="V" />
+        <Widget name="radio" example="&lt;radio/&gt;" summary="[支持绑定] 单选框控件" type="V" />
+        <Widget name="radiogroup" example="&lt;radiogroup/&gt;" summary="单选框组控件" type="V" />
+        <Widget name="seekbar" example="&lt;seekbar/&gt;" summary="[支持绑定] 拖动条控件" type="V" />
+        <Widget name="spinner" example="&lt;spinner/&gt;" summary="[支持绑定] 下拉菜单控件" type="V" />
+        <Widget name="Switch" example="&lt;Switch/&gt;" summary="[支持绑定] 开关控件" type="V" />
+        <Widget name="text" example="&lt;text/&gt;" summary="文本控件" type="V" />
+        <Widget name="timepicker" example="&lt;timepicker/&gt;" summary="时间选择控件" type="V" />
+        <Widget name="webview" example="&lt;webview/&gt;" summary="网页控件" type="V" />
+    </WidgetGroup>
+    <WidgetGroup name="Android布局">
+        <Widget name="AppBarLayout" example="&lt;AppBarLayout&gt;&lt;/AppBarLayout&gt;"
+            summary="App顶栏布局" type="VG" />
+        <Widget name="BottomAppBar" example="&lt;BottomAppBar&gt;&lt;/BottomAppBar&gt;"
+            summary="底栏布局" type="VG" />
+        <Widget name="CardView" example="&lt;CardView&gt;&lt;/CardView&gt;" summary="卡片布局"
+            type="VG" />
+        <Widget name="ConstraintLayout" example="&lt;ConstraintLayout&gt;&lt;/ConstraintLayout&gt;"
+            summary="约束布局" type="VG" />
+        <Widget name="FrameLayout" example="&lt;FrameLayout&gt;&lt;/FrameLayout&gt;" summary="帧布局"
+            type="VG" />
+        <Widget name="GridLayout" example="&lt;GridLayout&gt;&lt;/GridLayout&gt;" summary="表格布局"
+            type="VG" />
+        <Widget name="LinearLayout" example="&lt;LinearLayout&gt;&lt;/LinearLayout&gt;"
+            summary="线性布局" type="VG" />
+        <Widget name="NavigationView" example="&lt;NavigationView&gt;&lt;/NavigationView&gt;"
+            summary="导航布局" type="VG" />
+        <Widget name="RecyclerView" example="&lt;RecyclerView&gt;&lt;/RecyclerView&gt;"
+            summary="重复布局" type="VG" />
+        <Widget name="ScrollView" example="&lt;ScrollView&gt;&lt;/ScrollView&gt;" summary="滚动布局"
+            type="VG" />
+        <Widget name="TabItem" example="&lt;TabItem&gt;&lt;/TabItem&gt;" summary="切换指示器"
+            type="VG" />
+        <Widget name="TabLayout" example="&lt;TabLayout&gt;&lt;/TabLayout&gt;" summary="切换指示器组"
+            type="VG" />
+        <Widget name="TableLayout" example="&lt;TableLayout&gt;&lt;/TableLayout&gt;" summary="表格布局"
+            type="VG" />
+        <Widget name="TableRow" example="&lt;TableRow&gt;&lt;/TableRow&gt;" summary="表格行布局"
+            type="VG" />
+        <Widget name="ToolBar" example="&lt;ToolBar&gt;&lt;/ToolBar&gt;" summary="工具栏布局"
+            type="VG" />
+    </WidgetGroup>
+    <WidgetGroup name="Android控件">
+        <Widget name="AdView" example="&lt;AdView/&gt;" summary="广告控件" type="V" />
+        <Widget name="Barrier" example="&lt;Barrier/&gt;" summary="定位块" type="V" />
+        <Widget name="Button" example="&lt;Button/&gt;" summary="按钮控件" type="V" />
+        <Widget name="CalendarView" example="&lt;CalendarView/&gt;" summary="日期控件" type="V" />
+        <Widget name="CheckBox" example="&lt;CheckBox/&gt;" summary="复选框控件" type="V" />
+        <Widget name="Chip" example="&lt;Chip/&gt;" summary="标签" type="V" />
+        <Widget name="ChipGroup" example="&lt;ChipGroup/&gt;" summary="标签流组件" type="V" />
+        <Widget name="GuideLine" example="&lt;GuideLine/&gt;" summary="定位线" type="V" />
+        <Widget name="ImageView" example="&lt;ImageView/&gt;" summary="图片控件" type="V" />
+        <Widget name="MapView" example="&lt;MapView/&gt;" summary="地图控件" type="V" />
+        <Widget name="MockView" example="&lt;MockView/&gt;" summary="虚拟控件" type="V" />
+        <Widget name="ProgressBar" example="&lt;ProgressBar/&gt;" summary="进度条控件" type="V" />
+        <Widget name="RadioButton" example="&lt;RadioButton/&gt;" summary="单选框按键" type="V" />
+        <Widget name="RadioGroup" example="&lt;RadioGroup/&gt;" summary="单选框组件" type="V" />
+        <Widget name="RatingBar" example="&lt;RatingBar/&gt;" summary="打星级控件" type="V" />
+        <Widget name="SearchView" example="&lt;SearchView/&gt;" summary="搜索框控件" type="V" />
+        <Widget name="SeekBar" example="&lt;SeekBar/&gt;" summary="拖动条控件" type="V" />
+        <Widget name="SurfaceView" example="&lt;SurfaceView/&gt;" summary="流媒体控件" type="V" />
+        <Widget name="TextView" example="&lt;TextView/&gt;" summary="文本框控件" type="V" />
+        <Widget name="ToggleButton" example="&lt;ToggleButton/&gt;" summary="开关控件" type="V" />
+        <Widget name="VideoView" example="&lt;VideoView/&gt;" summary="视频控件" type="V" />
+        <Widget name="View" example="&lt;View/&gt;" summary="基础控件" type="V" />
+        <Widget name="WebView" example="&lt;WebView/&gt;" summary="网页控件" type="V" />
+    </WidgetGroup>
+</Widgets>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="background">#1a1c1a</color>
+    <color name="colorError">#ffb4a9</color>
+    <color name="colorErrorContainer">#930006</color>
+    <color name="colorOnBackground">#e2e3de</color>
+    <color name="colorOnError">#680003</color>
+    <color name="colorOnErrorContainer">#ffdad4</color>
+    <color name="colorOnPrimary">#00391a</color>
+    <color name="colorOnPrimaryContainer">#96f7b2</color>
+    <color name="colorOnSecondary">#223527</color>
+    <color name="colorOnSecondaryContainer">#d2e8d3</color>
+    <color name="colorOnSurface">#e2e3de</color>
+    <color name="colorOnSurfaceVariant">#c1c9bf</color>
+    <color name="colorOnTertiary">#023640</color>
+    <color name="colorOnTertiaryContainer">#beeaf6</color>
+    <color name="colorOutline">#8b938a</color>
+    <color name="colorPrimary">#7bda98</color>
+    <color name="colorPrimaryContainer">#005228</color>
+    <color name="colorSecondary">#b6ccb8</color>
+    <color name="colorSecondaryContainer">#384b3c</color>
+    <color name="colorSurface">#1a1c1a</color>
+    <color name="colorSurfaceVariant">#414941</color>
+    <color name="colorTertiary">#a2ceda</color>
+    <color name="colorTertiaryContainer">#204d56</color>
+    <color name="console_debug">#dfc0c0c0</color>
+    <color name="console_verbose">#7f7f80</color>
+    <color name="divider">#30000000</color>
+    <color name="window_background">#303030</color>
+</resources>
