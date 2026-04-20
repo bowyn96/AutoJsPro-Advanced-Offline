@@ -2,3 +2,5 @@ signed_before_optim.apk.idsig
 AutoJsPro-signed.apk
 autojspro.jks
 config.json
+AutoJsPro/build/
+AutojsPro_original/build/

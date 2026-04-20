@@ -1,0 +1,12 @@
+/node_modules
+/src
+/public
+/build.sh
+/babel.config.js
+/package.json
+/package-lock.json
+/.autojs.build.ignore
+/.autojs.source.ignore
+/vue.config.js
+/jsconfig.json
+/main.node.js

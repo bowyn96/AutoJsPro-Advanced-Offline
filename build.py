@@ -166,6 +166,12 @@ def main():
     parser = argparse.ArgumentParser(description="AutoJsPro 快速打包签名脚本")
     parser.add_argument("-i", "--project", default="AutojsPro", help="APK 工程目录（默认 AutojsPro）")
     parser.add_argument(
+        "-o",
+        "--output",
+        default="AutoJsPro-signed.apk",
+        help="最终 APK 路径（相对项目根目录，默认 AutoJsPro-signed.apk）",
+    )
+    parser.add_argument(
         "-v",
         "--verbose",
         action="store_true",
@@ -214,7 +220,9 @@ def main():
     signed_before_optim_apk = BASE / "signed_before_optim.apk"
     signed_stored_apk = BASE / "signed_stored.apk"
     optimized_apk = BASE / "optimized.apk"
-    final_apk = BASE / "AutoJsPro-signed.apk"
+    final_apk = Path(args.output)
+    if not final_apk.is_absolute():
+        final_apk = BASE / final_apk
 
     mux_jar = BASE / "bin" / "ApkDataMultiplexing.jar"
 

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="background">#ff1a1c1a</color>
+    <color name="colorError">#ffffb4a9</color>
+    <color name="colorErrorContainer">#ff930006</color>
+    <color name="colorOnBackground">#ffe2e3de</color>
+    <color name="colorOnError">#ff680003</color>
+    <color name="colorOnErrorContainer">#ffffdad4</color>
+    <color name="colorOnPrimary">#ff00391a</color>
+    <color name="colorOnPrimaryContainer">#ff96f7b2</color>
+    <color name="colorOnSecondary">#ff223527</color>
+    <color name="colorOnSecondaryContainer">#ffd2e8d3</color>
+    <color name="colorOnSurface">#ffe2e3de</color>
+    <color name="colorOnSurfaceVariant">#ffc1c9bf</color>
+    <color name="colorOnTertiary">#ff023640</color>
+    <color name="colorOnTertiaryContainer">#ffbeeaf6</color>
+    <color name="colorOutline">#ff8b938a</color>
+    <color name="colorPrimary">#ff7bda98</color>
+    <color name="colorPrimaryContainer">#ff005228</color>
+    <color name="colorSecondary">#ffb6ccb8</color>
+    <color name="colorSecondaryContainer">#ff384b3c</color>
+    <color name="colorSurface">#ff1a1c1a</color>
+    <color name="colorSurfaceVariant">#ff414941</color>
+    <color name="colorTertiary">#ffa2ceda</color>
+    <color name="colorTertiaryContainer">#ff204d56</color>
+    <color name="console_debug">#dfc0c0c0</color>
+    <color name="console_verbose">#ff7f7f80</color>
+    <color name="divider">#30000000</color>
+    <color name="window_background">#ff303030</color>
+</resources>

@@ -1,0 +1,6 @@
+#!/system/bin/sh
+if [ "x$npm_config_node_gyp" = "x" ]; then
+  node "$NPM_PREFIX/node_modules/npm/node_modules/node-gyp/bin/node-gyp.js" "$@"
+else
+  "$npm_config_node_gyp" "$@"
+fi

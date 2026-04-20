@@ -1,0 +1,31 @@
+{
+  "abis": [
+    "armeabi-v7a"
+  ],
+  "assets": [],
+  "encryptLevel": 0,
+  "useFeatures": [],
+  "launchConfig": {
+    "displaySplash": true,
+    "hideLogs": false,
+    "splashText": "Powered by Auto.js Pro",
+    "stableMode": false
+  },
+  "main": "main.js",
+  "name": "自定义ABI",
+  "optimization": {
+    "removeOpenCv": true,
+    "unusedResources": false
+  },
+  "packageName": "org.example.custom_abis",
+  "scripts": {},
+  "versionCode": 1,
+  "versionName": "1.0.0",
+  "permissionConfig": {
+    "manifestPermissions": [
+      "android.permission.WAKE_LOCK"
+    ],
+    "requestListOnStartup": [
+    ]
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "assets": [],
+  "encryptLevel": 0,
+  "useFeatures": [],
+  "launchConfig": {
+    "displaySplash": true,
+    "hideLogs": false,
+    "splashText": "Powered by Auto.js Pro",
+    "stableMode": false
+  },
+  "main": "main.js",
+  "name": "Rhino ~ Node.js",
+  "optimization": {
+    "removeOpenCv": true,
+    "unusedResources": true
+  },
+  "packageName": "org.example.rhino_nodejs",
+  "versionCode": 1,
+  "versionName": "1.0.0",
+  "permissionConfig": {
+    "manifestPermissions": [
+      "android.permission.INTERNET",
+      "android.permission.WAKE_LOCK",
+      "android.permission.SYSTEM_ALERT_WINDOW"
+    ],
+    "requestListOnStartup": [
+    ]
+  }
+}

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<vertical>
+    <img w="*" h="0" layout_weight="1" src="https://api.dujin.org/bing/m.php" scaleType="fitXY"/>
+    <frame gravity="center" height="180">
+        <horizontal gravity="center">
+            <img src="@mipmap/ic_launcher" w="80" h="80" scaleType="fitXY"/>
+            <text text="自定义启动图" w="auto" h="auto" textSize="24" textColor="#212121"
+                textStyle="bold" layout_gravity="center" margin="16"/>
+        </horizontal>
+    </frame>
+</vertical>

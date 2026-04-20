@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@id/rename" android:title="@string/text_rename" />
+    <item android:id="@id/send" android:title="@string/text_send" />
+    <item android:id="@id/delete" android:title="@string/text_delete" />
+    <item android:title="@string/text_create">
+        <menu>
+            <item android:id="@id/action_create_file" android:title="@string/text_file" />
+            <item android:id="@id/action_create_dir" android:title="@string/text_directory" />
+            <item android:id="@id/action_create_project" android:title="@string/text_project" />
+        </menu>
+    </item>
+    <item android:id="@id/action_project" android:title="@string/text_project" app:itemTextColor="@color/menu_color" app:showAsAction="never">
+        <menu>
+            <item android:id="@id/action_run_project" android:title="@string/text_run_project" app:showAsAction="never" />
+            <item android:id="@id/action_build_project_apk" android:title="@string/text_build_project_apk" app:showAsAction="never" />
+            <item android:id="@id/action_edit_project" android:title="@string/text_edit_project" app:showAsAction="never" />
+        </menu>
+    </item>
+    <item android:id="@id/action_open_workspace" android:title="@string/text_open_workspace" />
+    <item android:id="@id/cli" android:title="@string/text_cli" />
+    <item android:id="@id/npm" android:title="npm">
+        <menu>
+            <item android:id="@id/action_npm_init" android:title="npm init -f" />
+            <item android:id="@id/action_npm_install" android:title="npm install" />
+            <item android:id="@id/action_npm_install_package" android:title="npm install ..." />
+            <item android:id="@id/action_npm_search_plutojs" android:title="@string/text_npm_search_plutojs" />
+            <item android:id="@id/action_npm_others" android:title="@string/text_npm_others" />
+        </menu>
+    </item>
+</menu>

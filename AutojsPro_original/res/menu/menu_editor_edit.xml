@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@id/action_find_or_replace" android:title="@string/text_find_or_replace" app:showAsAction="never" />
+    <item android:title="@string/text_jump">
+        <menu>
+            <item android:id="@id/action_jump_to_line" android:title="@string/text_jump_to_line" app:showAsAction="never" />
+            <item android:id="@id/action_jump_to_start" android:title="@string/text_jump_to_start" app:showAsAction="never" />
+            <item android:id="@id/action_jump_to_end" android:title="@string/text_jump_to_end" app:showAsAction="never" />
+            <item android:id="@id/action_jump_to_line_start" android:title="@string/text_jump_to_line_start" app:showAsAction="never" />
+            <item android:id="@id/action_jump_to_line_end" android:title="@string/text_jump_to_line_end" app:showAsAction="never" />
+        </menu>
+    </item>
+    <item android:title="@string/text_copy">
+        <menu>
+            <item android:id="@id/action_copy_all" android:title="@string/text_copy_all" app:showAsAction="never" />
+            <item android:id="@id/action_copy_line" android:title="@string/text_copy_line" app:showAsAction="never" />
+        </menu>
+    </item>
+    <item android:title="@string/text_delete">
+        <menu>
+            <item android:id="@id/action_delete_line" android:title="@string/text_delete_line" app:showAsAction="never" />
+            <item android:id="@id/action_clear" android:title="@string/text_clear" app:showAsAction="never" />
+        </menu>
+    </item>
+    <item android:title="@string/text_move">
+        <menu>
+            <item android:id="@id/action_move_lines_up" android:title="@string/text_move_lines_up" app:showAsAction="never" />
+            <item android:id="@id/action_move_lines_down" android:title="@string/text_move_lines_down" app:showAsAction="never" />
+        </menu>
+    </item>
+    <item android:title="@string/text_fold">
+        <menu>
+            <item android:id="@id/action_fold_all" android:title="@string/text_fold_all" app:showAsAction="never" />
+            <item android:id="@id/action_unfold_all" android:title="@string/text_unfold_all" app:showAsAction="never" />
+        </menu>
+    </item>
+    <item android:id="@id/action_beautify" android:title="@string/text_code_beautify" app:showAsAction="never" />
+</menu>

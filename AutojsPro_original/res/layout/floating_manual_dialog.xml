@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout android:id="@id/appBar" android:background="@color/colorSurface" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.google.android.material.appbar.MaterialToolbar android:id="@id/toolbar" android:layout_width="match_parent" android:layout_height="?actionBarSize" app:menu="@menu/menu_manual_dialog" app:navigationIcon="@drawable/round_close_20" app:navigationIconTint="@color/colorOnSurface" />
+    </com.google.android.material.appbar.AppBarLayout>
+    <org.autojs.autojs.ui.widget.EWebView android:id="@id/ewebView" android:layout_width="match_parent" android:layout_height="match_parent" />
+</LinearLayout>

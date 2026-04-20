@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:background="@drawable/bg_floating_controller" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="12.0sp" android:ellipsize="end" android:id="@id/title" android:paddingTop="2.0dp" android:layout_width="wrap_content" android:layout_height="48.0dp" android:paddingStart="8.0dp" android:paddingEnd="8.0dp" />
+    <LinearLayout android:layout_gravity="bottom" android:orientation="horizontal" android:id="@id/container" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@id/action" android:background="?selectableItemBackground" android:paddingTop="7.5dp" android:paddingBottom="7.5dp" android:layout_width="40.0dp" android:layout_height="40.0dp" android:src="@drawable/ic_expand_more_black_48dp" android:paddingStart="7.5dp" android:paddingEnd="7.5dp" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/buttonContainer" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@id/runOrStop" android:background="?selectableItemBackground" android:paddingTop="7.5dp" android:paddingBottom="7.5dp" android:layout_width="40.0dp" android:layout_height="40.0dp" android:src="@drawable/round_play_arrow_20" android:paddingStart="7.5dp" android:paddingEnd="7.5dp" />
+            <ImageView android:id="@id/edit" android:background="?selectableItemBackground" android:paddingTop="7.5dp" android:paddingBottom="7.5dp" android:visibility="gone" android:layout_width="40.0dp" android:layout_height="40.0dp" android:src="@drawable/round_edit_20" android:paddingStart="7.5dp" android:paddingEnd="7.5dp" />
+            <ImageView android:id="@id/log" android:background="?selectableItemBackground" android:paddingTop="7.5dp" android:paddingBottom="7.5dp" android:layout_width="40.0dp" android:layout_height="40.0dp" android:src="@drawable/round_article_20" android:paddingStart="7.5dp" android:paddingEnd="7.5dp" />
+            <ImageView android:id="@id/exit" android:background="?selectableItemBackground" android:paddingTop="7.5dp" android:paddingBottom="7.5dp" android:layout_width="40.0dp" android:layout_height="40.0dp" android:src="@drawable/round_close_20" android:paddingStart="7.5dp" android:paddingEnd="7.5dp" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

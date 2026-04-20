@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@id/rename" android:title="@string/text_rename" />
+    <item android:id="@id/send" android:title="@string/text_send" />
+    <item android:id="@id/delete" android:title="@string/text_delete" />
+    <item android:id="@id/action_open_workspace" android:title="@string/text_open_workspace" />
+</menu>

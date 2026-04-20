@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:orientation="vertical" android:background="@color/background" android:fitsSystemWindows="false" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_gravity="center" android:id="@id/logo" android:layout_width="56.0dp" android:layout_height="56.0dp" android:layout_marginBottom="80.0dp" android:src="@drawable/icon_autojs_logo" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/appName" app:layout_constraintHorizontal_chainStyle="packed" app:layout_constraintStart_toStartOf="parent" />
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/appName" android:layout_width="128.0dp" android:layout_height="wrap_content" android:src="@drawable/autojs" android:layout_marginStart="12.0dp" app:layout_constraintBottom_toBottomOf="@id/logo" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/logo" app:layout_constraintTop_toTopOf="@id/logo" app:tint="@color/colorOnBackground" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:padding="8.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="24.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent">
+        <me.zhanghai.android.materialprogressbar.MaterialProgressBar android:layout_width="12.0dp" android:layout_height="12.0dp" android:backgroundTint="@color/colorPrimary" />
+        <TextView android:textSize="12.0sp" android:textColor="#ff929292" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/text_check_login_state" android:layout_marginStart="4.0dp" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

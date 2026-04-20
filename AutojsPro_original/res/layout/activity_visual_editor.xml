@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.google.android.material.appbar.AppBarLayout android:theme="@style/AppTheme.AppBarOverlay" android:id="@id/appBar" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <FrameLayout android:id="@id/toolbarMenu" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <com.google.android.material.tabs.TabLayout android:id="@id/tabs" android:layout_width="match_parent" android:layout_height="30.0dp" />
+    </com.google.android.material.appbar.AppBarLayout>
+    <org.autojs.hrapps.visual.lib.VisualUIEditor android:id="@id/visualEditor" android:layout_width="match_parent" android:layout_height="match_parent" />
+</LinearLayout>

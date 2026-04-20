@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@id/action_switch_log_level" app:actionViewClass="android.widget.Spinner" app:showAsAction="always" />
+    <item android:icon="@drawable/round_search_24" android:id="@id/action_search" android:inputType="text" android:imeOptions="actionSearch" app:actionViewClass="androidx.appcompat.widget.SearchView" app:iconTint="@android:color/white" app:showAsAction="always|collapseActionView" />
+    <item android:icon="@drawable/round_open_in_new_24" android:id="@id/action_open_by_other_apps" app:iconTint="@android:color/white" app:showAsAction="always" />
+    <item android:icon="@drawable/round_delete_outline_24" android:id="@id/action_clear_log_file" app:iconTint="@android:color/white" app:showAsAction="always" />
+</menu>

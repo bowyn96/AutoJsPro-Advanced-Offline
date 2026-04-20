@@ -1,0 +1,40 @@
+.class public final synthetic Lokhttp3/internal/io/ʺ;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Ljava/lang/Runnable;
+
+
+# instance fields
+.field public final synthetic ၥ:Lcom/stardust/view/accessibility/AccessibilityService;
+
+.field public final synthetic ၦ:I
+
+
+# direct methods
+.method public synthetic constructor <init>(Lcom/stardust/view/accessibility/AccessibilityService;I)V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lokhttp3/internal/io/ʺ;->ၥ:Lcom/stardust/view/accessibility/AccessibilityService;
+
+    iput p2, p0, Lokhttp3/internal/io/ʺ;->ၦ:I
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final run()V
+    .locals 2
+
+    iget-object v0, p0, Lokhttp3/internal/io/ʺ;->ၥ:Lcom/stardust/view/accessibility/AccessibilityService;
+
+    iget v1, p0, Lokhttp3/internal/io/ʺ;->ၦ:I
+
+    invoke-static {v0, v1}, Lcom/stardust/view/accessibility/AccessibilityService;->Ԩ(Lcom/stardust/view/accessibility/AccessibilityService;I)V
+
+    return-void
+.end method

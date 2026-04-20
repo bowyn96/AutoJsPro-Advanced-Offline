@@ -1,0 +1,43 @@
+.class public final Lokhttp3/internal/io/ob2;
+.super Ljava/io/OutputStream;
+.source "SourceFile"
+
+
+# instance fields
+.field public ၥ:Lokhttp3/internal/io/hb2;
+
+
+# direct methods
+.method public constructor <init>(Lokhttp3/internal/io/hb2;)V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/io/OutputStream;-><init>()V
+
+    iput-object p1, p0, Lokhttp3/internal/io/ob2;->ၥ:Lokhttp3/internal/io/hb2;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final write(I)V
+    .locals 1
+
+    iget-object v0, p0, Lokhttp3/internal/io/ob2;->ၥ:Lokhttp3/internal/io/hb2;
+
+    int-to-byte p1, p1
+
+    invoke-interface {v0, p1}, Lokhttp3/internal/io/hb2;->ԫ(B)V
+
+    return-void
+.end method
+
+.method public final write([BII)V
+    .locals 1
+
+    iget-object v0, p0, Lokhttp3/internal/io/ob2;->ၥ:Lokhttp3/internal/io/hb2;
+
+    invoke-interface {v0, p1, p2, p3}, Lokhttp3/internal/io/hb2;->Ϳ([BII)V
+
+    return-void
+.end method

@@ -1,0 +1,10 @@
+/node_modules
+/src
+/public
+/build.sh
+/webpack.config.js
+/package.json
+/package-lock.json
+/.autojs.build.ignore
+/.autojs.source.ignore
+/main.node.js

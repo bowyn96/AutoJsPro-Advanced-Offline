@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <org.autojs.autojs.ui.explorer.ExplorerProjectToolbar android:id="@id/project_toolbar" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dp" android:layout_marginTop="8.0dp" android:layout_marginRight="8.0dp" android:layout_marginBottom="6.0dp" android:foreground="?selectableItemBackground" app:cardElevation="0.97dp" app:cardUseCompatPadding="true" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/explorer_item_list" android:layout_width="match_parent" android:layout_height="wrap_content" />
+</LinearLayout>

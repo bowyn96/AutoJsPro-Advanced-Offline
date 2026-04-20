@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="账户">
+        <menu>
+            <item
+                android:id="@+id/item_email"
+                android:icon="@drawable/ic_email_black_48dp" />
+            <item
+                android:id="@+id/item_account"
+                android:icon="@drawable/ic_person_outline_black_48dp"
+                android:title="永久会员" />
+        </menu>
+    </item>
+
+    <item android:title="链接">
+        <menu>
+            <item
+                android:id="@+id/item_docs"
+                android:checkable="true"
+                android:icon="@drawable/ic_book_black_48dp"
+                android:title="Pro9 API文档" />
+            <item
+                android:id="@+id/item_forum"
+                android:checkable="true"
+                android:icon="@drawable/ic_forum_black_48dp"
+                android:title="官方论坛/频道" />
+            <item
+                android:id="@+id/item_m3"
+                android:checkable="true"
+                android:icon="@drawable/ic_web_asset_black_48dp"
+                android:title="Material 3官网" />
+        </menu>
+    </item>
+</menu>

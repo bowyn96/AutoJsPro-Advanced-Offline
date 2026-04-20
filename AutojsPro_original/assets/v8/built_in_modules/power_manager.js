@@ -1,0 +1,184 @@
+/**
+ * @中文
+ *
+ * 此模块可让您控制本应用的电源策略，通过忽略电池优化来让本应用在后台时更不容易系统杀死。使用此API有可能影响设备的电池寿命。
+ *
+ * @eng
+ *
+ * This module can let you control the power policy of this application, by ignoring battery optimization to let this application run in background. Using this API may cause the battery life of the device to be affected.
+ *
+ * @packageDocumentation
+ */
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.wakeUp = exports.newWakeLock = exports.isScreenOn = exports.requestIgnoreBatteryOptimizations = exports.isIgnoringBatteryOptimizations = void 0;
+const rhino_1 = require("./rhino");
+const app_1 = require("./app");
+const android = rhino_1.Packages.android;
+const Context = android.content.Context;
+const powerManager = $autojs.androidContext.getSystemService(Context.POWER_SERVICE);
+/**
+ * @中文
+ *
+ * 返回当前是否对应用pkg启用了【忽略电池优化】。
+ *
+ * @param pkg 应用包名，默认为本应用包名
+ * @returns 是否已忽略电池优化
+ *
+ * @eng
+ *
+ * Returns whether the application with the specify package name is enabled to ignore battery optimization.
+ *
+ * @param pkg The package name of the application, default to the package name of this application.
+ * @returns Whether the application is enabled to ignore battery optimization.
+ *
+ * @example
+ * ```javascript
+ * "nodejs";
+ * const { isIgnoringBatteryOptimizations } = require('power_manager');
+ * console.log('isIgnoringBatteryOptimizations:', isIgnoringBatteryOptimizations());
+ * ```
+ */
+function isIgnoringBatteryOptimizations(pkg = app_1.packageName) {
+    return powerManager.isIgnoringBatteryOptimizations(pkg);
+}
+exports.isIgnoringBatteryOptimizations = isIgnoringBatteryOptimizations;
+/**
+ * @中文
+ *
+ * 请求用户忽略对应用pkg的电池优化。系统将会弹出一个弹窗提示用户确认，这个过程是异步的，确认结果不会返回。
+ *
+ * @param forceRequest 如果为false，并且当前已经开启了忽略电池优化，则不执行请求；如果为true，则一律请求忽略电池优化。默认为false。
+ * @param pkg 需要忽略电池优化的包名。默认为本应用包名。
+ *
+ * @eng
+ *
+ * Request user to ignore battery optimization of the application with the specify package name. System will pop up a dialog to ask user to confirm, this process is asynchronous, the result of the confirmation will not be returned.
+ *
+ * @param forceRequest If false and the current application is enabled to ignore battery optimization, the request will not be executed; if true, the request will always be executed. The default is false.
+ * @param pkg The package name of the application to ignore battery optimization. The default is the package name of this application.
+ *
+ * @example
+ * ```javascript
+ * "nodejs";
+ * const { isIgnoringBatteryOptimizations, requestIgnoreBatteryOptimizations } = require('power_manager');
+ * if (!isIgnoringBatteryOptimizations()) {
+ *    console.log('requestIgnoreBatteryOptimizations');
+ *    requestIgnoreBatteryOptimizations();
+ * }
+ * ```
+ */
+function requestIgnoreBatteryOptimizations(forceRequest = false, pkg = app_1.packageName) {
+    const needRequest = forceRequest || !isIgnoringBatteryOptimizations();
+    if (needRequest) {
+        (0, app_1.startActivity)({
+            action: 'android.settings.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS',
+            data: 'package:' + pkg
+        });
+    }
+}
+exports.requestIgnoreBatteryOptimizations = requestIgnoreBatteryOptimizations;
+/**
+ * @中文
+ *
+ * 如果设备处于交互状态，则返回 true。
+ *
+ * 当此方法返回 true 时，设备处于唤醒状态并准备好与用户交互（尽管这并不能保证用户此时正在积极地与设备交互）。主屏幕通常在此状态下打开。某些功能（例如接近传感器）可能会暂时关闭屏幕，同时仍使设备处于交互状态。
+ *
+ * 当此方法返回 false 时，设备正在打瞌睡或睡着，并且必须在它准备好再次与用户交互之前被唤醒。在这种状态下，主屏幕通常是关闭的。某些功能，例如“环境模式”可能会导致主屏幕保持开启（尽管处于低功耗状态）以在设备打盹时显示系统提供的内容。
+ *
+ * @eng
+ *
+ * Returns true if the device is in an interactive state.
+ *
+ * When this method returns true, the device is awake and ready to interact with the user (although this is not a guarantee that the user is actively interacting with the device just this moment). The main screen is usually turned on while in this state. Certain features, such as the proximity sensor, may temporarily turn off the screen while still leaving the device in an interactive state. Note in particular that the device is still considered to be interactive while dreaming (since dreams can be interactive) but not when it is dozing or asleep.
+ *
+ * When this method returns false, the device is dozing or asleep and must be awoken before it will become ready to interact with the user again. The main screen is usually turned off while in this state. Certain features, such as "ambient mode" may cause the main screen to remain on (albeit in a low power state) to display system-provided content while the device dozes.
+ *
+ * @example
+ * ```javascript
+ * "nodejs";
+ * const { isScreenOn } = require('power_manager');
+ * console.log(isScreenOn());
+ * ```
+ */
+function isScreenOn() {
+    return powerManager.isInteractive();
+}
+exports.isScreenOn = isScreenOn;
+/**
+ * @中文
+ *
+ * 创建具有指定级别和标志的新唤醒锁。
+ *
+ * levelAndFlags 参数指定使用逻辑或"|"运算符组合的唤醒锁定级别和可选标志。
+ *
+ * 唤醒锁定级别为：PARTIAL_WAKE_LOCK、FULL_WAKE_LOCK、SCREEN_DIM_WAKE_LOCK 和 SCREEN_BRIGHT_WAKE_LOCK。必须将确切的一个唤醒锁定级别指定为 levelAndFlags 参数的一部分。
+ *
+ * 唤醒锁定标志是：ACQUIRE_CAUSES_WAKEUP 和 ON_AFTER_RELEASE。多个标志可以组合为 levelAndFlags 参数的一部分。
+ *
+ * 在对象上调用 acquire() 以获取唤醒锁，并在完成后调用 release()。
+ *
+ * 尽管无需特殊权限即可创建唤醒锁，但需要 android.Manifest.permission.WAKE_LOCK 权限才能实际获取或释放返回的唤醒锁。
+ *
+ * 如果使用它来保持屏幕开启，您应该强烈考虑使用 android.view.WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON 代替。当用户在应用程序之间移动时，该窗口标志将由平台正确管理，并且不需要特殊权限。此外，使用标志将在多显示器场景中仅保持适当的屏幕打开，而使用唤醒锁将保持每个屏幕都打开。
+ *
+ * @param tag 用于调试目的的类名（或其他标记）。
+ * @param levelAndFlags 唤醒锁级别和标志值的组合，定义了所请求的 WakeLock 行为。
+ * @returns
+ *
+ * @eng
+ *
+ * Creates a new wake lock with the specified level and flags.
+ *
+ * The levelAndFlags parameter specifies a wake lock level and optional flags combined using the logical OR operator.
+ *
+ * The wake lock levels are: PARTIAL_WAKE_LOCK, FULL_WAKE_LOCK, SCREEN_DIM_WAKE_LOCK and SCREEN_BRIGHT_WAKE_LOCK. Exactly one wake lock level must be specified as part of the levelAndFlags parameter.
+ *
+ * The wake lock flags are: ACQUIRE_CAUSES_WAKEUP and ON_AFTER_RELEASE. Multiple flags can be combined as part of the levelAndFlags parameters.
+ *
+ * Call acquire() on the object to acquire the wake lock, and release() when you are done.
+ *
+ * Although a wake lock can be created without special permissions, the android.Manifest.permission.WAKE_LOCK permission is required to actually acquire or release the wake lock that is returned.
+ *
+ * If using this to keep the screen on, you should strongly consider using android.view.WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON instead. This window flag will be correctly managed by the platform as the user moves between applications and doesn't require a special permission. Additionally using the flag will keep only the appropriate screen on in a multi-display scenario while using a wake lock will keep every screen powered on.
+ *
+ * @param tag Your class name (or other tag) for debugging purposes.
+ * @param levelAndFlags Combination of wake lock level and flag values defining the requested behavior of the WakeLock.
+ * @returns
+ *
+ * @see [PowerManager.newWakeLock](https://developer.android.com/reference/android/os/PowerManager#newWakeLock(int,%20java.lang.String))。
+ */
+function newWakeLock(levelAndFlags, tag) {
+    return powerManager.newWakeLock(levelAndFlags, tag);
+}
+exports.newWakeLock = newWakeLock;
+/**
+ * @中文
+ *
+ * 获取一个唤醒锁，该唤醒锁将唤醒屏幕并保持一定时间, timeout时间（默认为5秒）后唤醒锁将自动释放。
+ *
+ * @param options 唤醒锁选项
+ *
+ * @eng
+ *
+ * Acquire a wakelock that wakes the screen for a certain amount of time.
+ *
+ * @see [PowerManager.newWakeLock](https://developer.android.com/reference/android/os/PowerManager#newWakeLock(int,%20java.lang.String))。
+ *
+ * @example
+ * ```javascript
+ * "nodejs";
+ * const { isScreenOn, wakeUp } = require('power_manager');
+ * if (!isScreenOn()) {
+ *     wakeUp();
+ * }
+ * ```
+ */
+function wakeUp(options) {
+    var _a, _b;
+    const PowerManager = rhino_1.Packages.android.os.PowerManager;
+    const timeout = (_a = options === null || options === void 0 ? void 0 : options.timeout) !== null && _a !== void 0 ? _a : 5000;
+    const flags = (_b = options === null || options === void 0 ? void 0 : options.flags) !== null && _b !== void 0 ? _b : (PowerManager.FULL_WAKE_LOCK | PowerManager.ACQUIRE_CAUSES_WAKEUP | PowerManager.ON_AFTER_RELEASE);
+    newWakeLock(flags, "autojspro:wakeUp").acquire(timeout);
+}
+exports.wakeUp = wakeUp;

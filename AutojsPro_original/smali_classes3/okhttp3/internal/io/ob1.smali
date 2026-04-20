@@ -1,0 +1,58 @@
+.class public interface abstract Lokhttp3/internal/io/ob1;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lokhttp3/internal/io/ob1$Ϳ;
+    }
+.end annotation
+
+
+# virtual methods
+.method public abstract Ϳ(Lokhttp3/internal/io/ob1$Ϳ;Lokhttp3/internal/io/hc1;Lokhttp3/internal/io/i50;)V
+.end method
+
+.method public abstract Ԩ(Lokhttp3/internal/io/qb1;Lokhttp3/internal/io/ob1$Ϳ;)V
+.end method
+
+.method public abstract ԩ(Lokhttp3/internal/io/qb1;)V
+.end method
+
+.method public abstract Ԫ(Lokhttp3/internal/io/ob1$Ϳ;Lokhttp3/internal/io/hc1;Lokhttp3/internal/io/sd6;)V
+.end method
+
+.method public abstract ԫ(Lokhttp3/internal/io/ob1$Ϳ;Lokhttp3/internal/io/hc1;Lokhttp3/internal/io/ty0;)V
+.end method
+
+.method public abstract Ԭ(Lokhttp3/internal/io/qb1;Ljava/lang/String;Lokhttp3/internal/io/ob1$Ϳ;)V
+.end method
+
+.method public abstract ԭ(Lokhttp3/internal/io/ob1$Ϳ;Lokhttp3/internal/io/hc1;)V
+.end method
+
+.method public abstract Ԯ(Lokhttp3/internal/io/ob1$Ϳ;Lokhttp3/internal/io/hc1;)V
+.end method
+
+.method public abstract ԯ(Lokhttp3/internal/io/ob1$Ϳ;Lokhttp3/internal/io/hc1;Ljava/lang/Object;)V
+.end method
+
+.method public abstract ֏(Lokhttp3/internal/io/ob1$Ϳ;Lokhttp3/internal/io/hc1;)V
+.end method
+
+.method public abstract ؠ(Lokhttp3/internal/io/ob1$Ϳ;Lokhttp3/internal/io/hc1;)V
+.end method
+
+.method public abstract ހ(Lokhttp3/internal/io/ob1$Ϳ;Lokhttp3/internal/io/hc1;)V
+.end method
+
+.method public abstract ށ(Lokhttp3/internal/io/ob1$Ϳ;Lokhttp3/internal/io/hc1;Lokhttp3/internal/io/sd6;)V
+.end method
+
+.method public abstract ނ(Lokhttp3/internal/io/ob1$Ϳ;Lokhttp3/internal/io/hc1;Ljava/lang/Throwable;)V
+.end method
+
+.method public abstract ރ(Lokhttp3/internal/io/qb1;)V
+.end method

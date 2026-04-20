@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="internal_log_processes">
+        <item>App process</item>
+        <item>Script process</item>
+        <item>Send all</item>
+    </string-array>
+    <string-array name="root_record_out_file_type_keys">
+        <item>可编辑的js文件</item>
+        <item>不可编辑的二进制文件</item>
+    </string-array>
+    <string-array name="root_record_out_file_type_values">
+        <item>js</item>
+        <item>binary</item>
+    </string-array>
+</resources>

@@ -1,0 +1,30 @@
+{
+  "assets": [],
+  "encryptLevel": 0,
+  "useFeatures": [],
+  "launchConfig": {
+    "displaySplash": true,
+    "hideLogs": false,
+    "splashText": "Powered by Auto.js Pro",
+    "stableMode": false
+  },
+  "main": "特征匹配(全分辨率找图).js",
+  "name": "ImageProc",
+  "optimization": {
+    "removeOpenCv": false,
+    "unusedResources": true
+  },
+  "packageName": "org.example.imageproc",
+  "versionCode": 1,
+  "versionName": "1.0.0",
+  "permissionConfig": {
+    "manifestPermissions": [
+      "android.permission.INTERNET",
+      "android.permission.WAKE_LOCK",
+      "android.permission.WRITE_EXTERNAL_STORAGE",
+      "android.permission.FOREGROUND_SERVICE"
+    ],
+    "requestListOnStartup": [
+    ]
+  }
+}

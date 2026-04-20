@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/constraintLayout" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="4.0dp">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="16.0sp" android:textColor="?color_text_normal" android:layout_gravity="center_vertical" android:id="@id/status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="6.0dp" android:text="" android:layout_weight="1.0" />
+            <Button android:textSize="14.0sp" android:textColor="?color_text_im" android:layout_gravity="center_vertical" android:id="@id/fresh" android:background="@drawable/border_line" android:layout_width="50.0dp" android:layout_height="30.0dp" android:layout_margin="4.0dp" android:text="@string/fresh" android:maxLines="1" />
+            <Button android:textSize="14.0sp" android:textColor="?color_text_im" android:layout_gravity="center_vertical" android:id="@id/change" android:background="@drawable/border_line" android:layout_width="70.0dp" android:layout_height="30.0dp" android:layout_margin="4.0dp" android:text="@string/change_page" android:maxLines="1" />
+        </LinearLayout>
+        <View android:background="?color_split" android:layout_width="match_parent" android:layout_height="1.0dp" />
+        <LinearLayout android:orientation="vertical" android:id="@id/moveBar" android:background="?color_background" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="16.0sp" android:textColor="?color_text_normal" android:layout_gravity="center_vertical" android:id="@id/moveTip" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_margin="6.0dp" android:text="" android:layout_weight="1.0" />
+                <com.google.android.material.switchmaterial.SwitchMaterial android:theme="@style/CheckBox" android:layout_gravity="center_vertical" android:id="@id/moveAll" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" />
+                <TextView android:textSize="16.0sp" android:textColor="?color_text_verbose" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dp" android:text="@string/operate_all" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="-6.0dp">
+                <Button android:textSize="12.0sp" android:textColor="?color_text_im" android:id="@id/useCopyIn" android:background="@drawable/border_line" android:layout_width="wrap_content" android:layout_height="30.0dp" android:layout_margin="6.0dp" android:text="@string/copy_in" android:layout_weight="1.0" />
+                <Button android:textSize="12.0sp" android:textColor="?color_text_im" android:id="@id/useCopyAfter" android:background="@drawable/border_line" android:layout_width="wrap_content" android:layout_height="30.0dp" android:layout_margin="6.0dp" android:text="@string/copy_after" android:layout_weight="1.0" />
+                <Button android:textSize="12.0sp" android:textColor="?color_text_im" android:id="@id/useMoveIn" android:background="@drawable/border_line" android:layout_width="wrap_content" android:layout_height="30.0dp" android:layout_margin="6.0dp" android:text="@string/move_in" android:layout_weight="1.0" />
+                <Button android:textSize="12.0sp" android:textColor="?color_text_im" android:id="@id/useMoveAfter" android:background="@drawable/border_line" android:layout_width="wrap_content" android:layout_height="30.0dp" android:layout_margin="6.0dp" android:text="@string/move_after" android:layout_weight="1.0" />
+                <Button android:textSize="12.0sp" android:textColor="?color_text_im" android:id="@id/cancelMove" android:background="@drawable/border_line" android:layout_width="wrap_content" android:layout_height="30.0dp" android:layout_margin="6.0dp" android:text="@string/cancel_move" android:layout_weight="1.0" />
+            </LinearLayout>
+            <View android:background="?color_split" android:layout_width="match_parent" android:layout_height="1.0dp" />
+        </LinearLayout>
+        <include layout="@layout/design_recvcler" />
+        <include layout="@layout/design_selector" />
+        <View android:background="?color_split" android:layout_width="match_parent" android:layout_height="1.0dp" />
+        <LinearLayout android:orientation="vertical" android:background="?color_background" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <Button android:textSize="12.0sp" android:textColor="?color_text_im" android:id="@id/useDeleteAll" android:background="@drawable/border_line" android:layout_width="wrap_content" android:layout_height="30.0dp" android:layout_margin="6.0dp" android:text="@string/delete_all" android:layout_weight="1.0" />
+                <Button android:textSize="12.0sp" android:textColor="?color_text_im" android:id="@id/useDeleteOne" android:background="@drawable/border_line" android:layout_width="wrap_content" android:layout_height="30.0dp" android:layout_margin="6.0dp" android:text="@string/delete_one" android:layout_weight="1.0" />
+                <Button android:textSize="12.0sp" android:textColor="?color_text_im" android:id="@id/useAddIn" android:background="@drawable/border_line" android:layout_width="wrap_content" android:layout_height="30.0dp" android:layout_margin="6.0dp" android:text="@string/add_in" android:layout_weight="1.0" />
+                <Button android:textSize="12.0sp" android:textColor="?color_text_im" android:id="@id/useAddAfter" android:background="@drawable/border_line" android:layout_width="wrap_content" android:layout_height="30.0dp" android:layout_margin="6.0dp" android:text="@string/add_after" android:maxLines="1" android:layout_weight="1.0" />
+                <Button android:textSize="12.0sp" android:textColor="?color_text_im" android:id="@id/useClear" android:background="@drawable/border_line" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="30.0dp" android:layout_margin="6.0dp" android:text="@string/attr_clear" android:layout_weight="1.0" />
+                <Button android:textSize="12.0sp" android:textColor="?color_text_im" android:id="@id/useUncheck" android:background="@drawable/border_line" android:layout_width="wrap_content" android:layout_height="30.0dp" android:layout_margin="6.0dp" android:text="@string/uncheck" android:maxLines="1" android:layout_weight="1.0" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <Button android:textSize="12.0sp" android:textColor="?color_text_im" android:id="@id/useCollect" android:background="@drawable/border_line" android:layout_width="wrap_content" android:layout_height="30.0dp" android:layout_margin="6.0dp" android:text="@string/collect_widget" android:layout_weight="1.0" />
+                <Button android:textSize="12.0sp" android:textColor="?color_text_im" android:id="@id/useBindVar" android:background="@drawable/border_line" android:layout_width="wrap_content" android:layout_height="30.0dp" android:layout_margin="6.0dp" android:text="@string/bind_var" android:layout_weight="1.0" />
+                <Button android:textSize="12.0sp" android:textColor="?color_text_im" android:id="@id/useBindSdcard" android:background="@drawable/border_line" android:layout_width="wrap_content" android:layout_height="30.0dp" android:layout_margin="6.0dp" android:text="@string/bind_sdcard" android:layout_weight="1.0" />
+                <Button android:textSize="12.0sp" android:textColor="?color_text_im" android:id="@id/useEvent" android:background="@drawable/border_line" android:layout_width="wrap_content" android:layout_height="30.0dp" android:layout_margin="6.0dp" android:text="@string/add_event" android:layout_weight="1.0" />
+                <Button android:textSize="12.0sp" android:textColor="?color_text_im" android:id="@id/useAttr" android:background="@drawable/border_line" android:layout_width="wrap_content" android:layout_height="30.0dp" android:layout_margin="6.0dp" android:text="@string/attr_change" android:maxLines="1" android:layout_weight="1.0" />
+            </LinearLayout>
+        </LinearLayout>
+        <View android:background="#ff555555" android:layout_width="match_parent" android:layout_height="1.0dp" />
+    </LinearLayout>
+</FrameLayout>

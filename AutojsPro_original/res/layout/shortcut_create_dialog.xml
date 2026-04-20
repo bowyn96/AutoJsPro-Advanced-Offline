@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:padding="16.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/icon" android:background="@drawable/shortcut_create_dialog_icon_bg" android:padding="12.0dp" android:layout_width="64.0dp" android:layout_height="64.0dp" android:src="@drawable/ic_add_white_48dp" android:layout_marginStart="8.0dp" android:layout_marginEnd="16.0dp" />
+        <com.google.android.material.textfield.TextInputLayout android:layout_gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/text_name">
+            <androidx.appcompat.widget.AppCompatEditText android:id="@id/name" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+    <com.google.android.material.checkbox.MaterialCheckBox android:id="@id/useAndroidNShortcut" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:text="@string/text_use_android_n_shortcut" android:layout_marginStart="20.0dp" android:layout_marginEnd="0.0dp" />
+</LinearLayout>

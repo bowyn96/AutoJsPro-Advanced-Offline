@@ -1,0 +1,228 @@
+.class public final Lokhttp3/internal/io/Ⴒ;
+.super Lokhttp3/internal/io/ർ;
+.source "SourceFile"
+
+# interfaces
+.implements Lokhttp3/internal/io/r61;
+
+
+# instance fields
+.field public final ԩ:I
+
+.field public final Ԫ:I
+
+.field public final ԫ:I
+
+.field public final Ԭ:I
+
+.field public final ԭ:I
+
+.field public final Ԯ:I
+
+.field public final ԯ:Lokhttp3/internal/io/aw3;
+    .annotation runtime Lokhttp3/internal/io/pu2;
+    .end annotation
+.end field
+
+.field public final ֏:Lokhttp3/internal/io/aw3;
+    .annotation runtime Lokhttp3/internal/io/pu2;
+    .end annotation
+.end field
+
+
+# direct methods
+.method public constructor <init>(Lokhttp3/internal/io/s13;IIIIIILokhttp3/internal/io/aw3;Lokhttp3/internal/io/aw3;)V
+    .locals 0
+    .param p1    # Lokhttp3/internal/io/s13;
+        .annotation runtime Lokhttp3/internal/io/pu2;
+        .end annotation
+    .end param
+    .param p8    # Lokhttp3/internal/io/aw3;
+        .annotation runtime Lokhttp3/internal/io/pu2;
+        .end annotation
+    .end param
+    .param p9    # Lokhttp3/internal/io/aw3;
+        .annotation runtime Lokhttp3/internal/io/pu2;
+        .end annotation
+    .end param
+
+    invoke-direct {p0, p1}, Lokhttp3/internal/io/ർ;-><init>(Lokhttp3/internal/io/s13;)V
+
+    invoke-static {p2}, Lokhttp3/internal/io/ov4;->ԭ(I)I
+
+    iput p2, p0, Lokhttp3/internal/io/Ⴒ;->ԩ:I
+
+    const/4 p1, 0x0
+
+    if-lez p2, :cond_0
+
+    invoke-static {p3}, Lokhttp3/internal/io/ov4;->ԯ(I)I
+
+    goto :goto_0
+
+    :cond_0
+    const/4 p3, 0x0
+
+    :goto_0
+    iput p3, p0, Lokhttp3/internal/io/Ⴒ;->Ԫ:I
+
+    const/4 p3, 0x1
+
+    if-le p2, p3, :cond_1
+
+    invoke-static {p4}, Lokhttp3/internal/io/ov4;->ԯ(I)I
+
+    goto :goto_1
+
+    :cond_1
+    const/4 p4, 0x0
+
+    :goto_1
+    iput p4, p0, Lokhttp3/internal/io/Ⴒ;->ԫ:I
+
+    const/4 p3, 0x2
+
+    if-le p2, p3, :cond_2
+
+    invoke-static {p5}, Lokhttp3/internal/io/ov4;->ԯ(I)I
+
+    goto :goto_2
+
+    :cond_2
+    const/4 p5, 0x0
+
+    :goto_2
+    iput p5, p0, Lokhttp3/internal/io/Ⴒ;->Ԭ:I
+
+    const/4 p3, 0x3
+
+    if-le p2, p3, :cond_3
+
+    invoke-static {p6}, Lokhttp3/internal/io/ov4;->ԯ(I)I
+
+    goto :goto_3
+
+    :cond_3
+    const/4 p6, 0x0
+
+    :goto_3
+    iput p6, p0, Lokhttp3/internal/io/Ⴒ;->ԭ:I
+
+    const/4 p3, 0x4
+
+    if-le p2, p3, :cond_4
+
+    invoke-static {p7}, Lokhttp3/internal/io/ov4;->ԯ(I)I
+
+    goto :goto_4
+
+    :cond_4
+    const/4 p7, 0x0
+
+    :goto_4
+    iput p7, p0, Lokhttp3/internal/io/Ⴒ;->Ԯ:I
+
+    iput-object p8, p0, Lokhttp3/internal/io/Ⴒ;->ԯ:Lokhttp3/internal/io/aw3;
+
+    iput-object p9, p0, Lokhttp3/internal/io/Ⴒ;->֏:Lokhttp3/internal/io/aw3;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final Ϳ()I
+    .locals 1
+
+    iget v0, p0, Lokhttp3/internal/io/Ⴒ;->ԩ:I
+
+    return v0
+.end method
+
+.method public final Ԩ()I
+    .locals 1
+
+    iget v0, p0, Lokhttp3/internal/io/Ⴒ;->Ԫ:I
+
+    return v0
+.end method
+
+.method public final Ԫ()Lokhttp3/internal/io/aw3;
+    .locals 1
+    .annotation runtime Lokhttp3/internal/io/pu2;
+    .end annotation
+
+    iget-object v0, p0, Lokhttp3/internal/io/Ⴒ;->ԯ:Lokhttp3/internal/io/aw3;
+
+    return-object v0
+.end method
+
+.method public final Ԭ()I
+    .locals 1
+
+    iget v0, p0, Lokhttp3/internal/io/Ⴒ;->Ԯ:I
+
+    return v0
+.end method
+
+.method public final ԭ()I
+    .locals 1
+
+    iget-object v0, p0, Lokhttp3/internal/io/ർ;->Ϳ:Lokhttp3/internal/io/s13;
+
+    iget v0, v0, Lokhttp3/internal/io/s13;->ၵ:I
+
+    return v0
+.end method
+
+.method public final ԯ()Lokhttp3/internal/io/aw3;
+    .locals 1
+    .annotation runtime Lokhttp3/internal/io/pu2;
+    .end annotation
+
+    iget-object v0, p0, Lokhttp3/internal/io/Ⴒ;->֏:Lokhttp3/internal/io/aw3;
+
+    return-object v0
+.end method
+
+.method public final ނ()I
+    .locals 1
+
+    iget v0, p0, Lokhttp3/internal/io/Ⴒ;->ԫ:I
+
+    return v0
+.end method
+
+.method public final ފ()I
+    .locals 1
+
+    iget v0, p0, Lokhttp3/internal/io/Ⴒ;->ԭ:I
+
+    return v0
+.end method
+
+.method public final ދ()I
+    .locals 1
+
+    iget-object v0, p0, Lokhttp3/internal/io/ർ;->Ϳ:Lokhttp3/internal/io/s13;
+
+    iget v0, v0, Lokhttp3/internal/io/s13;->ၯ:I
+
+    return v0
+.end method
+
+.method public final ތ()I
+    .locals 1
+
+    iget v0, p0, Lokhttp3/internal/io/Ⴒ;->Ԭ:I
+
+    return v0
+.end method
+
+.method public final ޏ()Lokhttp3/internal/io/xf0;
+    .locals 1
+
+    sget-object v0, Lokhttp3/internal/io/xf0;->ࠤ:Lokhttp3/internal/io/xf0;
+
+    return-object v0
+.end method

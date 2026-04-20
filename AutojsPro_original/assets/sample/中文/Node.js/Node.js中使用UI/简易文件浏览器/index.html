@@ -1,0 +1,67 @@
+<html>
+
+<head>
+</head>
+
+<body>
+    <title>文件浏览器</title>
+    <h1 id="title">加载中...</h1>
+    <table id="files">
+    </table>
+
+    <script src="autojs://sdk/v1.js"></script>
+    <script>
+        let title = document.getElementById('title');
+        let table = document.getElementById('files');
+        let currentDir;
+
+        changeDir('/sdcard');
+
+        // 在返回键/返回手势时，返回上一级目录
+        $autojs.handle('go-back', () => {
+            const i = currentDir.lastIndexOf('/');
+            if (i <= 0) {
+                $autojs.invoke('finish');
+                return;
+            }
+            changeDir(currentDir.substring(0, i));
+            return currentDir;
+        });
+
+        function changeDir(dir) {
+            currentDir = dir;
+
+            title.innerText = dir;
+            $autojs.invoke('listFiles', {
+                path: dir
+            }).then((files) => {
+                setFiles(dir, files);
+            }).catch(showError);
+        }
+
+        function setFiles(dir, files) {
+            table.innerHTML = "";
+            let i = 0;
+            files.forEach(file => {
+                let row = table.insertRow(i);
+                if (file.type === "dir") {
+                    row.innerHTML = `<td><p style="color: blue;"><u>${file.name}</u></p></td>`;
+                    row.onclick = () => {
+                        if (file.type === 'dir') {
+                            changeDir(file.path);
+                        }
+                    };
+                } else {
+                    row.innerHTML = `<td><p>${file.name}</p></td>`;
+                }
+                i++;
+            });
+        }
+
+        function showError(err) {
+            table.innerText = err.toString();
+        }
+    </script>
+</body>
+
+</html>

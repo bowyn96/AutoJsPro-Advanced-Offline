@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/title_container" android:background="?selectableItemBackground" android:paddingTop="8.0dp" android:paddingBottom="8.0dp" android:clickable="true" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/collapse" android:layout_width="16.0dp" android:layout_height="16.0dp" android:layout_marginLeft="8.0dp" android:layout_marginRight="8.0dp" android:src="@drawable/ic_expanded" android:tint="#ff828384" />
+        <TextView android:textSize="12.0sp" android:textColor="#ff828384" android:layout_gravity="center_vertical" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/text_directory" />
+    </LinearLayout>
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/back" android:background="?selectableItemBackgroundBorderless" android:padding="9.0dp" android:clickable="true" android:layout_width="32.0dp" android:layout_height="match_parent" android:src="@drawable/ic_dir_up" android:tint="#ff828384" />
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/order" android:background="?selectableItemBackgroundBorderless" android:padding="9.0dp" android:clickable="true" android:layout_width="32.0dp" android:layout_height="match_parent" android:src="@drawable/ic_descending_order" android:tint="#ff828384" />
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/sort" android:background="?selectableItemBackgroundBorderless" android:padding="9.0dp" android:clickable="true" android:layout_width="32.0dp" android:layout_height="match_parent" android:src="@drawable/ic_sort" android:tint="#ff828384" />
+</LinearLayout>

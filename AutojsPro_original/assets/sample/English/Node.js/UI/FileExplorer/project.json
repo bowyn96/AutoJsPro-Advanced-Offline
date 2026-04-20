@@ -1,0 +1,30 @@
+{
+  "assets": [],
+  "encryptLevel": 0,
+  "useFeatures": [],
+  "launchConfig": {
+    "displaySplash": true,
+    "hideLogs": false,
+    "splashText": "Powered by Auto.js Pro",
+    "stableMode": false
+  },
+  "main": "main.node.js",
+  "name": "FileExplorer",
+  "optimization": {
+    "removeOpenCv": true,
+    "unusedResources": true
+  },
+  "packageName": "org.example.fileexplorer",
+  "versionCode": 1,
+  "versionName": "1.0.0",
+  "permissionConfig": {
+    "manifestPermissions": [
+      "android.permission.INTERNET",
+      "android.permission.WAKE_LOCK",
+      "android.permission.WRITE_EXTERNAL_STORAGE"
+    ],
+    "requestListOnStartup": [
+      "android.permission.WRITE_EXTERNAL_STORAGE"
+    ]
+  }
+}
